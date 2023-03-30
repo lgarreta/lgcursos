@@ -1,0 +1,276 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.4.7.2 (Linux)"/>
+	<meta name="created" content="2021-06-15T08:51:06.357386268"/>
+	<meta name="changed" content="2021-06-15T08:51:41.774678351"/>
+	<style type="text/css">
+		h3.cjk { font-family: "Noto Serif CJK SC" }
+		h3.ctl { font-family: "Lohit Devanagari" }
+		code.cjk { font-family: "Noto Sans Mono CJK SC", monospace }
+	</style>
+</head>
+<body lang="en-US" dir="ltr"><h1 style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="6" style="font-size: 25pt">R
+Markdown</font></font></font></h1>
+<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">We’ve
+spent a lot of time getting R and RStudio working, learning about
+projects and version control - you are practically an expert at this!
+There is one last major functionality of R/RStudio that we would be
+remiss to not include in your introduction to R -&nbsp;</span></span></span></font></font></font></span><a href="http://rmarkdown.rstudio.com/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">Markdown!</span></span></span></span></font></font></span></font></span></a></p>
+<div id="what-is-r-markdown" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>What
+	is R Markdown?</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">R
+	Markdown is a way of creating fully reproducible documents, in which
+	both text and code can be combined. In fact, these lessons are
+	written using R Markdown! That’s how we make things:</font></font></font></p>
+	<ul>
+		<li><p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+		<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">bullets</font></font></font></p>
+		<li><p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>bold</b></span></span></font></font></font></span></strong></p>
+		<li><p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">italics</span></span></span></font></font></font></span></em></p>
+		<li><p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><a href="https://en.wikipedia.org/wiki/Rickrolling" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">links</span></span></span></span></font></font></span></font></span></a></p>
+		<li><p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">or
+		run inline&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">r
+		code</span></span></span></span></font></font></font></span></code></p>
+	</ul>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">And
+	by the end of this lesson, you should be able to do each of those
+	things too, and more!</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Despite
+	these documents all starting as plain text, you can render them into
+	HTML pages, or PDFs, or Word documents, or slides! The symbols you
+	use to signal, for example,&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>bold</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;or&nbsp;</span></span></span></font></font></font></span><em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">italics</span></span></span></font></font></font></span></em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;is
+	compatible with all of those formats.</span></span></span></font></font></font></span></p>
+</div>
+<div id="why-use-r-markdown" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Why
+	use R Markdown?</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">One
+	of the main benefits is the reproducibility of using R Markdown.
+	Since you can easily combine text and code chunks in one document,
+	you can easily integrate introductions, hypotheses, your code that
+	you are running, the results of that code and your conclusions all
+	in one document. Sharing what you did, why you did it and how it
+	turned out becomes so simple - and that person you share it with can
+	re-run your code and&nbsp;</span></span></span></font></font></font></span><em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">get
+	the exact same answers you got.</span></span></span></font></font></font></span></em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;That’s
+	what we mean about reproducibility. But also, sometimes you will be
+	working on a project that takes many weeks to complete; you want to
+	be able to see what you did a long time ago (and perhaps be reminded
+	exactly why you were doing this) and you can see exactly what you
+	ran AND the results of that code - and R Markdown documents allow
+	you to do that.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Another
+	major benefit to R Markdown is that since it is plain text, it works
+	very well with version control systems. It is easy to track what
+	character changes occur between commits; unlike other formats that
+	aren’t plain text. For example, in one version of this lesson, I
+	may have forgotten to bold&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>this</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;word.
+	When I catch my mistake, I can make the plain text changes to signal
+	I would like that word bolded, and in the commit, you can see the
+	exact character changes that occurred to now make the word bold.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Check
+	out&nbsp;</span></span></span></font></font></font></span><a href="https://vimeo.com/178485416" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">this
+	video</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;that
+	the RStudio developers have released about R Markdown and what it
+	is!</span></span></span></font></font></font></span></p>
+</div>
+<div id="installation" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Installation</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Another
+	(selfish) benefit of R Markdown is how easy it is to use! Like
+	everything in R, this extended functionality comes from an R package
+	- “rmarkdown.” All you need to do to install it is
+	run&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">install.packages(&quot;rmarkdown&quot;)</span></span></span></span></font></font></font></span></code></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">And
+	that’s it, you are ready to go.</font></font></font></p>
+</div>
+<div id="getting-started-with-r-markdown" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Getting
+	started with R Markdown</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">To
+	create an R Markdown document, in R Studio, go to File &gt; New File
+	&gt; R Markdown. You will be presented with the following window:</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="01-R%20Markdown_html_5e1c3e31ab38fa84.png" name="Image1" alt="Initiating an R Markdown file" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Initiating
+	an R Markdown file</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">I’ve
+	filled in a title and an author and switched the output format to a
+	PDF. Explore around this window and the tabs along the left to see
+	all the different formats that you can output to. When you are done,
+	click OK, and a new window should open with a little explanation on
+	R Markdown files.</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="01-R%20Markdown_html_22ef6dfa1ba4b748.png" name="Image2" alt="The default template for R Markdown files" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	default template for R Markdown files</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">There
+	are three main sections of an R Markdown document. The first is
+	the&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>header</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;at
+	the top, bounded by the three dashes. This is where you can specify
+	details like the title, your name, the date, and what kind of
+	document you want output. If you filled in the blanks in the window
+	earlier, these should be filled out for you.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Also
+	on this page, you can see&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>text
+	sections</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">,
+	for example, one section starts with “## R Markdown” - We’ll
+	talk more about what this means in a second, but this section will
+	render as text when you produce the PDF of this file - and all of
+	the formatting you will learn generally applies to this section.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">And
+	finally, you will see&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>code
+	chunks</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+	These are bounded by the triple backticks. These are pieces of R
+	code (“chunks”) that you can run right from within your document
+	- and the output of this code will be included in the PDF when you
+	create it.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">The
+	easiest way to see how each of these sections behave is to produce
+	the PDF!</font></font></font></p>
+</div>
+<div id="knitting-documents" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333">“<font face="inherit"><font size="5" style="font-size: 18pt"><span style="font-style: normal"><b>Knitting”
+	documents</b></span></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">When
+	you are done with a document, in R Markdown, you are said
+	to&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">“</span></span></span></font></font></font></span></strong><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>knit”</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;your
+	plain text and code into your final document. To do so, click on the
+	“Knit” button along the top of the source panel. When you do so,
+	it will prompt you to save the document as an RMD file. Do so.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">You
+	should see a document like this:</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="01-R%20Markdown_html_1dc66606c1c79104.png" name="Image3" alt="The rendered PDF you created by knitting your markdown file" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	rendered PDF you created by knitting your markdown file</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">So
+	here you can see that the content of the header was rendered into a
+	title, followed by your name and the date. The text chunks produced
+	a section header called “R Markdown” which is followed by two
+	paragraphs of text. Following this, you can see the R
+	code&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">summary(cars)</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">,
+	importantly, followed by the output of running that code. And
+	further down you will see code that ran to produce a plot, and then
+	that plot. This is one of the huge benefits of R Markdown -
+	rendering the results to code inline.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Go
+	back to the R Markdown file that produced this PDF and see if you
+	can see how you signify you want text bolded. (Hint: Look at the
+	word “Knit” and see what it is surrounded by).</font></font></font></p>
+</div>
+<div id="what-are-some-easy-markdown-commands" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>What
+	are some easy Markdown commands?</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">At
+	this point, I hope we’ve convinced you that R Markdown is a useful
+	way to keep your code/data and have set you up to be able to play
+	around with it. To get you started, we’ll practice some of the
+	formatting that is inherent to R Markdown documents.</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">To
+	start, let’s look at bolding and italicising text. To bold text,
+	you surround it by two asterisks on either side. Similarly, to
+	italicise text, you surround the word with a single asterisk on
+	either side.&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">**bold**</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;and&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">*italics*</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;respectively.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">We’ve
+	also seen from the default document that you can make section
+	headers. To do this, you put a series of hash marks (#). The number
+	of hash marks determines what level of heading it is. One hash is
+	the highest level and will make the largest text (see the first line
+	of this lecture), two hashes is the next highest level and so on.
+	Play around with this formatting and make a series of headers, like
+	so:</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">#
+	Header level 1</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">##
+	Header level 2</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">###
+	Header level 3...</span></span></span></span></font></font></font></span></code></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">The
+	other thing we’ve seen so far is code chunks. To make an R code
+	chunk, you can type the three backticks, followed by the curly
+	brackets surrounding a lower case R, put your code on a new line and
+	end the chunk with three more backticks. Thankfully, RStudio
+	recognized you’d be doing this a lot and there are short cuts,
+	namely Ctrl+Alt+I (Windows) or Cmd + Option + I (Mac). Additionally,
+	along the top of the source quadrant, there is the “Insert”
+	button, that will also produce an empty code chunk. Try making an
+	empty code chunk. Inside it, type the code&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">print(&quot;Hello
+	world&quot;)</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+	When you knit your document, you will see this code chunk and the
+	(admittedly simplistic) output of that chunk.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">If
+	you aren’t ready to knit your document yet, but want to see the
+	output of your code, select the line of code you want to run and use
+	Ctrl+Enter or hit the “Run” button along the top of your source
+	window. The text “Hello world” should be output in your console
+	window. If you have multiple lines of code in a chunk and you want
+	to run them all in one go, you can run the entire chunk by using
+	Ctrl+Shift+Enter OR hitting the green arrow button on the right side
+	of the chunk OR going to the Run menu and selecting Run current
+	chunk.</font></font></font></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">One
+	final thing we will go into detail on is making bulleted lists, like
+	the one at the top of this lesson. Lists are easily created by
+	preceding each prospective bullet point by a single dash, followed
+	by a space. Importantly, at the end of each bullet’s line, end
+	with TWO spaces. This is a quirk of R Markdown that will cause
+	spacing problems if not included.</font></font></font></p>
+	<ul>
+		<li><p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+		<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Try</font></font></font></p>
+		<li><p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+		<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Making</font></font></font></p>
+		<li><p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+		<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Your</font></font></font></p>
+		<li><p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+		<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Own</font></font></font></p>
+		<li><p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+		<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Bullet</font></font></font></p>
+		<li><p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+		<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">List!</font></font></font></p>
+	</ul>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">This
+	is a great starting point and there is so much more you can do with
+	R Markdown. Thankfully, RStudio developers have produced an&nbsp;</span></span></span></font></font></font></span><a href="http://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">“R
+	Markdown cheatsheet”</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;that
+	we urge you to go check out and see everything you can do with R
+	Markdown! The sky is the limit!</span></span></span></font></font></font></span></p>
+</div>
+<div id="summary" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Summary</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">In
+	this lesson we’ve delved into R Markdown, starting with what it is
+	and why you might want to use it. We hopefully got you started with
+	R Markdown, first by installing it, and then by generating and
+	knitting our first R Markdown document. We then looked at some of
+	the various formatting options available to you and practiced
+	generating code and running it within the R Studio interface.</font></font></font></p>
+</div>
+<p><br/>
+<br/>
+
+</p>
+</body>
+</html>

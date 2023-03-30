@@ -1,0 +1,132 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+Why are you applying for Financial Aid? (150 words minimum required)
+\end_layout
+
+\begin_layout Standard
+I think that data science is an interesting area nowadays and I want to
+ learn data science with the objective of looking for a job in this area.
+ Also, I want to get a certificate in this area to see if, in my country
+ Colombia, it brings me more possibilities to apply for jobs related to
+ Data Science.
+ Currently, I work as a "guide", something like "instructor" in programming.
+ I have had experience in some projects related to Data Science and I think
+ I can become an expert in this area to opt for a more stable and well paid
+ job.
+ I know some topics in the Data Science specialty, mainly those related
+ to programming, but I don't know other topics very well.
+ But, to get the certification I need to pass all the courses, and this
+ specialization has many courses that are out of my budget and for this
+ reason I am requesting this financial support.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+How will taking this course help you achieve your career goals?
+\end_layout
+
+\begin_layout Standard
+Taking this first course of the Data Science specialization will open my
+ mind to see how data can be converted into valuable knowledge and what
+ tools can be used to do so.
+ It will be an important step in my learning process to go deeper into more
+ specific Data Science topics, especially in the methods to be used to transform
+ and obtain valuable knowledge from data.
+ However, I am aware that I will need more specialized courses, but this
+ course is a first step that gives me important knowledge to face the courses
+ to come.
+ 
+\end_layout
+
+\begin_layout Standard
+I have seen that in my country there are job offers related to Data Science,
+ I have a professional degree but it is not related to this area, however,
+ I have worked in some Data Science projects and I have knowledge in computer
+ programming.This course will expand and complement this knowledge that will
+ help me in the near future to propose Data Science projects to companies
+ or solve related problems.
+ 
+\end_layout
+
+\end_body
+\end_document

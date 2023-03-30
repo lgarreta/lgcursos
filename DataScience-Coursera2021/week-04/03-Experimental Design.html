@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.4.7.2 (Linux)"/>
+	<meta name="created" content="2021-06-15T08:54:50.255351799"/>
+	<meta name="changed" content="2021-06-15T08:55:50.303544567"/>
+	<style type="text/css">
+		h3.cjk { font-family: "Noto Serif CJK SC" }
+		h3.ctl { font-family: "Lohit Devanagari" }
+	</style>
+</head>
+<body lang="en-US" dir="ltr"><h1 style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="6" style="font-size: 25pt">Experimental
+Design</font></font></font></h1>
+<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Now
+that we’ve looked at the different types of data science questions,
+we are going to spend some time looking at experimental design
+concepts. As a data scientist, you are a&nbsp;</span></span></span></font></font></font></span><em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">scientist</span></span></span></font></font></font></span></em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;and
+as such, need to have the ability to design proper experiments to
+best answer your data science questions!</span></span></span></font></font></font></span></p>
+<div id="what-does-experimental-design-mean" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>What
+	does experimental design mean?</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Experimental
+	design is organizing an experiment so that you have the correct data
+	(and enough of it!) to clearly and effectively answer your data
+	science question. This process involves clearly formulating your
+	question in advance of any data collection, designing the best
+	set-up possible to gather the data to answer your question,
+	identifying problems or sources of error in your design, and only
+	then, collecting the appropriate data.</font></font></font></p>
+</div>
+<div id="why-should-you-care" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Why
+	should you care?</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Going
+	into an analysis, you need to have a plan in advance of what you are
+	going to do and how you are going to analyse the data. If you do the
+	wrong analysis, you can come to the wrong conclusions!</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">We’ve
+	seen many examples of this exact scenario play out in the scientific
+	community over the years - there’s an entire website,&nbsp;</span></span></span></font></font></font></span><a href="https://retractionwatch.com/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">Retraction
+	Watch</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">,
+	dedicated to identifying papers that have been retracted, or removed
+	from the literature, as a result of poor scientific practices. And
+	sometimes, those poor practices are a result of poor experimental
+	design and analysis.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Occasionally,
+	these erroneous conclusions can have sweeping effects; particularly
+	in the field of human health. For example,&nbsp;</span></span></span></font></font></font></span><a href="https://www.nature.com/articles/nm1491" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">here</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;we
+	have a paper that was trying to predict the effects of a person’s
+	genome on their response to different chemotherapies, to guide which
+	patient receives which drugs to best treat their cancer. As you can
+	see, this paper was retracted, over 4 years after it was initially
+	published. In that time, this data, which was later shown to have
+	numerous problems in their set-up and cleaning, was cited in nearly
+	450 other papers that may have used these erroneous results to
+	bolster their own research plans. On top of this, this wrongly
+	analysed data was used in clinical trials to determine cancer
+	patient treatment plans. When the stakes are this high, experimental
+	design is paramount.</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-Experimental%20Design_html_d036001c4a4e6935.png" name="Image1" alt="A retracted paper and the forensic analysis of what went wrong" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>A
+	retracted paper and the forensic analysis of what went wrong</b></span></span></font></font></font></span></strong></p>
+</div>
+<div id="principles-of-experimental-design" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Principles
+	of experimental design</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">There
+	are a lot of concepts and terms inherent to experimental design.
+	Let’s go over some of these now!</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Independent
+	variable (AKA factor):</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;The
+	variable that the experimenter manipulates; it does not depend on
+	other variables being measured. Often displayed on the x-axis.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Dependent
+	variable:</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;The
+	variable that is expected to change as a result of changes in the
+	independent variable. Often displayed on the y-axis, so that changes
+	in X, the independent variable, effect changes in Y.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">So
+	when you are designing an experiment, you have to decide what
+	variables you will measure, and which you will manipulate to effect
+	changes in other measured variables. Additionally, you must develop
+	your&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>hypothesis</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">,
+	essentially an educated guess as to the relationship between your
+	variables and the outcome of your experiment.</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-Experimental%20Design_html_2bbfb54dbeda97be.png" name="Image2" alt="How hypotheses, independent, and dependent variables are related to each other" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>How
+	hypotheses, independent, and dependent variables are related to each
+	other</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Let’s
+	do an example experiment now! Let’s say for example that I have a
+	hypothesis that as shoe size increases, literacy also increases. In
+	this case, designing my experiment, I would choose a measure of
+	literacy (eg: reading fluency) as my variable that&nbsp;</span></span></span></font></font></font></span><em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">depends</span></span></span></font></font></font></span></em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;on
+	an individual’s shoe size.</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-Experimental%20Design_html_703622b014e0b98.png" name="Image3" alt="My experimental set-up: I hypothesize that literacy level depends on shoe size" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>My
+	experimental set-up: I hypothesize that literacy level&nbsp;</b></span></span></font></font></font></span></strong><strong><em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>depends</b></span></span></font></font></font></span></em></strong><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>&nbsp;on
+	shoe size</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">To
+	answer this question, I will design an experiment in which I measure
+	the shoe size and literacy level of 100 individuals.&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Sample
+	size</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;is
+	the number of experimental subjects you will include in your
+	experiment. There are ways to pick an optimal sample size, that you
+	will cover in later courses. Before I collect my data though, I need
+	to consider if there are problems with this experiment that might
+	cause an erroneous result. In this case, my experiment may be
+	fatally flawed by a&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>confounder</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Confounder:</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;An
+	extraneous variable that may affect the relationship between the
+	dependent and independent variables.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">In
+	our example, since age affects foot size and literacy is affected by
+	age, if we see any relationship between shoe size and literacy, the
+	relationship may actually be due to age – age is “confounding”
+	our experimental design!</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">To&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>control</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;for
+	this, we can make sure we also measure the age of each individual so
+	that we can take into account the effects of age on literacy, as
+	well. Another way we could&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>control</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;for
+	age’s effect on literacy would be to&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>fix</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;the
+	age of all participants. If everyone we study is the same age, then
+	we have removed the possible effect of age on literacy.</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-Experimental%20Design_html_aff6731988ca43d3.png" name="Image4" alt="Age is confounding my experimental design! We need to control for this" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Age
+	is confounding my experimental design! We need to control for this</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">In
+	other experimental design paradigms, a&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>control
+	group</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;may
+	be appropriate. This is when you have a group of experimental
+	subjects that are&nbsp;</span></span></span></font></font></font></span><em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">not</span></span></span></font></font></font></span></em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;manipulated.
+	So if you were studying the effect of a drug on survival, you would
+	have a group that received the drug (</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>treatment</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">)
+	and a group that did not (</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>control</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">).
+	This way, you can compare the effects of the drug in the treatment
+	versus control group.</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-Experimental%20Design_html_d39b300f4d7c7f92.png" name="Image5" alt="A control group is a group of subjects that do not receive the treatment, but still have their dependent variables measured" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>A
+	control group is a group of subjects that do not receive the
+	treatment, but still have their dependent variables measured</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">In
+	these study designs, there are other strategies we can use to
+	control for confounding effects. One, we can&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>blind</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;the
+	subjects to their assigned treatment group. Sometimes, when a
+	subject knows that they are in the treatment group (eg: receiving
+	the experimental drug), they can feel better, not from the drug
+	itself, but from knowing they are receiving treatment. This is known
+	as the&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>placebo
+	effect</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+	To combat this, often participants are blinded to the treatment
+	group they are in; this is usually achieved by giving the control
+	group a mock treatment (eg: given a sugar pill they are told is the
+	drug). In this way, if the placebo effect is causing a problem with
+	your experiment, both groups should experience it equally.</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-Experimental%20Design_html_879d6127ad1a8025.png" name="Image6" alt="Blinding your study means that your subjects don’t know what group they belong to - all participants receive a treatment" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Blinding
+	your study means that your subjects don’t know what group they
+	belong to - all participants receive a “treatment”</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">And
+	this strategy is at the heart of many of these studies; spreading
+	any possible confounding effects equally across the groups being
+	compared. For example, if you think age is a possible confounding
+	effect, making sure that both groups have similar ages and age
+	ranges will help to mitigate any effect age may be having on your
+	dependent variable - the effect of age is equal between your two
+	groups.</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">This
+	“balancing” of confounders is often achieved by&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>randomization</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+	Generally, we don’t know what will be a confounder beforehand; to
+	help lessen the risk of accidentally biasing one group to be
+	enriched for a confounder, you can randomly assign individuals to
+	each of your groups. This means that any potential confounding
+	variables should be distributed between each group roughly equally,
+	to help eliminate/reduce systematic errors.</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-Experimental%20Design_html_af8a18bd74dec6ec.png" name="Image7" alt="Randomizing subjects to either the control or treatment group is a great strategy to reduce confounders’ effects" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Randomizing
+	subjects to either the control or treatment group is a great
+	strategy to reduce confounders’ effects</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">There
+	is one final concept of experimental design that we need to cover in
+	this lesson, and that is&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>replication</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+	Replication is pretty much what it sounds like, repeating an
+	experiment with different experimental subjects. A single
+	experiment’s results may have occured by chance; a confounder was
+	unevenly distributed across your groups, there was a systematic
+	error in the data collection, there were some outliers, etc.
+	However, if you can repeat the experiment and collect a whole new
+	set of data and&nbsp;</span></span></span></font></font></font></span><em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">still</span></span></span></font></font></font></span></em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;come
+	to the same conclusion, your study is much stronger. Also at the
+	heart of replication is that it allows you to measure
+	the&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>variability</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;of
+	your data more accurately, which allows you to better assess whether
+	any differences you see in your data are significant.</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-Experimental%20Design_html_600dfd00f5f80b1b.png" name="Image8" alt="Replication studies are a great way to bolster your experimental results and get measures of variability in your data" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Replication
+	studies are a great way to bolster your experimental results and get
+	measures of variability in your data</b></span></span></font></font></font></span></strong></p>
+</div>
+<div id="sharing-data" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Sharing
+	data</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Once
+	you’ve collected and analysed your data, one of the next steps of
+	being a good citizen scientist is to share your data and code for
+	analysis. Now that you have a GitHub account and we’ve shown you
+	how to keep your version controlled data and analyses on GitHub,
+	this is a great place to share your code!</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">In
+	fact, hosted on GitHub, our group,&nbsp;</span></span></span></font></font></font></span><a href="https://github.com/jtleek/datasharing" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">the
+	Leek group</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">,
+	has developed a guide that has great advice for how to best share
+	data!</span></span></span></font></font></font></span></p>
+</div>
+<div id="beware-p-hacking" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Beware
+	p-hacking!</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">One
+	of the many things often reported in experiments is a value called
+	the&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>p-value</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+	This is a value that tells you the probability that the results of
+	your experiment were observed by chance. This is a very important
+	concept in statistics that we won’t be covering in depth here, if
+	you want to know more, check out&nbsp;</span></span></span></font></font></font></span><a href="https://www.youtube.com/watch?v=UsU-O2Z1rAs" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">this</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;video
+	explaining more about p-values.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">What
+	you need to look out for is when you manipulate p-values towards
+	your own end. Often, when your p-value is less than 0.05 (in other
+	words, there is a 5 percent chance that the differences you saw were
+	observed by chance), a result is considered&nbsp;</span></span></span></font></font></font></span><a href="https://xkcd.com/1478/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">significant</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+	But if you do 20 tests, by chance, you would expect one of the
+	twenty (5%) to be significant. In the age of big data, testing
+	twenty hypotheses is a very easy proposition. And this is where the
+	term&nbsp;</span></span></span></font></font></font></span><a href="https://en.wikipedia.org/wiki/Data_dredging" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">p-hacking</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;comes
+	from: This is when you exhaustively search a data set to find
+	patterns and correlations that appear statistically significant by
+	virtue of the sheer number of tests you have performed. These
+	spurious correlations can be reported as significant and if you
+	perform enough tests, you can find a data set and analysis that will
+	show you what you wanted to see.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Check
+	out this&nbsp;</span></span></span></font></font></font></span><a href="https://projects.fivethirtyeight.com/p-hacking/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">FiveThirtyEight</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;activity
+	where you can manipulate and filter data and perform a series of
+	tests such that you can get the data to find whatever relationship
+	you want!</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><a href="https://xkcd.com/882/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">XKCD</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;mocks
+	this concept in a comic testing the link between jelly beans and
+	acne - clearly there is no link there, but if you test enough jelly
+	bean colours, eventually, one of them will be correlated with acne
+	at p-value &lt; 0.05!</span></span></span></font></font></font></span></p>
+</div>
+<div id="summary" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Summary</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">In
+	this lesson we covered what experimental design is and why good
+	experimental design matters. We then looked in depth to the
+	principles of experimental design and defined some of the common
+	terms you need to consider when designing an experiment. Next, we
+	detoured a bit to see how you should share your data and code for
+	analysis. And finally, we looked at the dangers of p-hacking and
+	manipulating data to achieve significance.</font></font></font></p>
+</div>
+<p><br/>
+<br/>
+
+</p>
+</body>
+</html>

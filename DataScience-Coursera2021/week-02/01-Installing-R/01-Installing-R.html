@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.4.7.2 (Linux)"/>
+	<meta name="created" content="2021-06-13T09:59:58.555391793"/>
+	<meta name="changed" content="2021-06-13T10:00:34.830664853"/>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		h1 { margin-bottom: 0.08in; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Liberation Serif", serif; font-size: 24pt; font-weight: bold }
+		h1.cjk { font-family: "Noto Serif CJK SC"; font-size: 24pt; font-weight: bold }
+		h1.ctl { font-family: "Lohit Devanagari"; font-size: 24pt; font-weight: bold }
+		h3 { margin-top: 0.1in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid }
+		h3.western { font-family: "Liberation Serif", serif; font-size: 14pt; font-weight: bold }
+		h3.cjk { font-family: "Noto Serif CJK SC"; font-size: 14pt; font-weight: bold }
+		h3.ctl { font-family: "Lohit Devanagari"; font-size: 14pt; font-weight: bold }
+		a:link { color: #000080; so-language: zxx; text-decoration: underline }
+		strong { font-weight: bold }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><h1 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 110%; orphans: 2; widows: 2">
+<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="6" style="font-size: 25pt">Installing
+R</font></font></font></h1>
+<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Now
+that we’ve got a handle on what a data scientist is, how to find
+answers, and then spent some time going over a data science example,
+it’s time to get you set up to start exploring on your own. And the
+first step of that is installing R.</font></font></font></p>
+<div id="what-is-r-what-is-cran" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>What
+	is R? What is CRAN?</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">First,
+	let’s remind ourselves exactly what R is and why we might want to
+	use it.</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><a href="https://www.r-project.org/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">R</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;is
+	both a programming language and an environment, focused mainly on
+	statistical analysis and graphics. It will be one of the main tools
+	you use in this and following courses.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">R
+	is downloaded from the&nbsp;</span></span></span></font></font></font></span><a href="https://cran.r-project.org/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">Comprehensive
+	R Archive Network</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">,
+	or CRAN, and while this might be your first brush with it, we will
+	be returning to CRAN time and time again, when we install packages -
+	so keep an eye out!</span></span></span></font></font></font></span></p>
+</div>
+<div id="why-should-you-use-r" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Why
+	should you use R?</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Outside
+	of this course, you may be asking yourself -&nbsp;</span></span></span></font></font></font></span><a href="https://www.r-bloggers.com/why-use-r-five-reasons/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">why
+	should I use R?</span></span></span></span></font></font></span></font></span></a></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">The
+	reasons for using R are myriad, but some big ones are:</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>1)
+	Its popularity</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">R
+	is quickly becoming the standard language for statistical analysis.
+	This makes R a great language to learn as the more popular a
+	software is, the quicker new functionality is developed, the more
+	powerful it becomes, and the better the support there is!
+	Additionally, as you can see in the&nbsp;</span></span></span></font></font></font></span><a href="http://r4stats.com/articles/popularity/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">graph
+	below</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">,
+	knowing R is one of the top five languages asked for in data
+	scientist job postings!</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="01-Installing-R_html_3c0f2538abea3f4f.png" name="Image1" alt="R’s popularity among data scientists from r4stats.com" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>R’s
+	popularity among data scientists from r4stats.com</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>2)
+	Its cost</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">FREE!</font></font></font></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">This
+	one is pretty self-explanatory - every aspect of R is free to use,
+	unlike some other stats packages you may have heard of (eg: SAS,
+	SPSS), so there is no cost barrier to using R!</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>3)
+	Its extensive functionality</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">R
+	is a very versatile language - we’ve talked about its use in stats
+	and in graphing, but its use can be expanded to many different
+	functions - from making&nbsp;</span></span></span></font></font></font></span><a href="http://rmarkdown.rstudio.com/rmarkdown_websites.html" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">websites</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">,
+	making maps using&nbsp;</span></span></span></font></font></font></span><a href="http://www.nickeubank.com/gis-in-r/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">GIS
+	data</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">,
+	analysing&nbsp;</span></span></span></font></font></font></span><a href="https://cran.r-project.org/web/views/NaturalLanguageProcessing.html" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">language</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">…
+	and even making these&nbsp;</span></span></span></font></font></font></span><a href="https://cran.r-project.org/web/packages/ari/index.html" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">lectures
+	and videos</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">!
+	For whatever task you have in mind, there is often a package
+	available for download that does exactly that!</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>4)
+	Its community</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">And
+	the reason that the functionality of R is so extensive is the
+	community that has been built around R. Individuals have come
+	together to make “packages” that add to the functionality of R -
+	and more are being developed every day!</font></font></font></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Particularly
+	for people just getting started out with R, its community is a huge
+	benefit - due to its popularity, there are multiple forums that have
+	pages and pages dedicated to solving R problems. We talked about
+	this in the Getting Help lesson; these forums are great both for
+	finding other people who have had the same problem as you, and
+	posting your own new problems.</font></font></font></p>
+</div>
+<div id="installing-r-1" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Installing
+	R</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Now
+	that we’ve spent some time looking at the benefits of R, it is
+	time to install it! We’ll go over installation for both Windows
+	and Mac below, but know that these are general guidelines and small
+	details are likely to change subsequent to the making of this
+	lecture - use this as a scaffold.</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">For
+	both Windows and Mac machines, we start at the CRAN
+	homepage:&nbsp;</span></span></span></font></font></font></span><a href="https://cran.r-project.org/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">https://cran.r-project.org/</span></span></span></span></font></font></span></font></span></a></p>
+</div>
+<div id="installation---for-windows" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Installation
+	- for Windows</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">If
+	you are on a Windows computer, follow the link&nbsp;</span></span></span></font></font></font></span><a href="https://cran.r-project.org/bin/windows/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">Download
+	R for Windows</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">,
+	and follow the directions there - if this is your first time
+	installing R, go to the&nbsp;</span></span></span></font></font></font></span><a href="https://cran.r-project.org/bin/windows/base/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">base
+	distribution</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;and
+	click on the link at the top of the page that should say something
+	like “Download R [version number] for Windows.” This will
+	download an executable file for installation.</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="01-Installing-R_html_fe7ce52b212e42ac.png" name="Image2" alt="The download page for R on Windows" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">The
+	download page for R on Windows</font></font></font></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Open
+	the executable, and if prompted by a security warning, allow it to
+	run. Select the language you prefer during installation and agree to
+	the licensing information. You will next be prompted for a
+	destination location - this will likely be defaulted to Program
+	Files, in a subfolder called R, followed by another directory of the
+	version number. Unless you have any issues with this, the default
+	location is perfect.</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="01-Installing-R_html_53d52af769db46f8.png" name="Image3" alt="The install wizard for installing R" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	install wizard for installing R</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">You
+	will then be prompted to select which components should be
+	installed. Unless you are running short on memory, installing all of
+	the components is desireable. Next you’ll be asked about startup
+	options, and again, the defaults are fine for this. You will then be
+	asked where Setup should place shortcuts - this is completely up to
+	you, you can allow it to add the program to the start menu, or you
+	can click the box at the bottom that says to not create a start menu
+	link. Finally, you will be asked whether you want a desktop or Quick
+	Launch icon - up to you! I do not recommend changing the defaults
+	for the registry entries though.</font></font></font></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">After
+	this window, the installation should begin. Test that the
+	installation worked by opening R for the first time!</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="01-Installing-R_html_cbe973e007cad490.png" name="Image4" alt="The R terminal running!" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	R terminal running!</b></span></span></font></font></font></span></strong></p>
+</div>
+<div id="installation---for-macs" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Installation
+	- for Macs</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">If
+	you are on a Mac computer, follow the link&nbsp;</span></span></span></font></font></font></span><a href="https://cran.r-project.org/bin/macosx/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">Download
+	R for (Mac) OS X</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+	There you can find the various R versions for download. Note: If
+	your Mac is older than OS X 10.6 (“Snow Leopard”), you will need
+	to follow the directions on this page for downloading older versions
+	of R that are compatible with those operating systems.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Click
+	on the link to the most recent version of R, which will download a
+	.pkg file.</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="01-Installing-R_html_7644ea2d20a21207.png" name="Image5" alt="Downloading the .pkg file for Macs" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Downloading
+	the .pkg file for Macs</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Open
+	the pkg file and follow the prompts as provided by the installer.
+	First, click continue on the welcome page and again on the important
+	information window page. Next you will be presented with the
+	software license agreement, again, continue. Next you may be asked
+	to select a destination for R, either available to all users or to a
+	specific disk - select whichever you feel is best suited to your
+	setup. Finally, you will be at the “Standard Install” page; R
+	selects a default directory and if you are happy with that location,
+	go ahead and click install. At this point, you may be prompted to
+	type in the admin password, do so, and the install will begin!</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="01-Installing-R_html_9feab73765d9d063.png" name="Image6" alt="Installation of R on a Mac" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Installation
+	of R on a Mac</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Once
+	the installation is finished, go to your Applications and find R.
+	Test that the installation worked by opening R for the first time!</font></font></font></p>
+</div>
+<div id="summary" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Summary</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">In
+	this lesson we first looked at what R is and why we might want to
+	use it. We then focused on the installation process for R on both
+	Windows and Mac computers. Before moving on to the next lecture, be
+	sure that you have R installed properly.</font></font></font></p>
+</div>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+</body>
+</html>

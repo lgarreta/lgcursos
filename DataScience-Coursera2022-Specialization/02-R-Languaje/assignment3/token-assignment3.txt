@@ -1,0 +1,5 @@
+How to submit
+Copy the token below and run the submission script included in the assignment download. When prompted, use your email address lgarreta@gmail.com.
+
+20GYwa3BxjbrBzjj
+

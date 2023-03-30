@@ -1,0 +1,451 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.4.7.2 (Linux)"/>
+	<meta name="created" content="2021-06-13T10:43:08.195306453"/>
+	<meta name="changed" content="2021-06-13T10:44:21.529252909"/>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		h1 { margin-bottom: 0.08in; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Liberation Serif", serif; font-size: 24pt; font-weight: bold }
+		h1.cjk { font-family: "Noto Serif CJK SC"; font-size: 24pt; font-weight: bold }
+		h1.ctl { font-family: "Lohit Devanagari"; font-size: 24pt; font-weight: bold }
+		h3 { margin-top: 0.1in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid }
+		h3.western { font-family: "Liberation Serif", serif; font-size: 14pt; font-weight: bold }
+		h3.cjk { font-family: "Noto Serif CJK SC"; font-size: 14pt; font-weight: bold }
+		h3.ctl { font-family: "Lohit Devanagari"; font-size: 14pt; font-weight: bold }
+		strong { font-weight: bold }
+		a:link { color: #000080; so-language: zxx; text-decoration: underline }
+		em { font-style: italic }
+		code.western { font-family: "Liberation Mono", monospace }
+		code.cjk { font-family: "Noto Sans Mono CJK SC", monospace }
+		code.ctl { font-family: "Liberation Mono", monospace }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><h1 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 110%; orphans: 2; widows: 2">
+<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="6" style="font-size: 25pt">R
+packages</font></font></font></h1>
+<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Now
+that we’ve installed R and RStudio and have a basic understanding
+of how they work together, we can get at what makes R so special:
+packages.</font></font></font></p>
+<div id="what-is-an-r-package" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>What
+	is an R package?</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">So
+	far, anything we’ve played around with in R uses the “base” R
+	system. Base R, or everything included in R when you download it,
+	has rather basic functionality for statistics and plotting but it
+	can sometimes be limiting. To expand upon R’s basic functionality,
+	people have developed&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>packages.</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;A
+	package is a collection of functions, data, and code conveniently
+	provided in a nice, complete format for you. At the time of writing,
+	there are just over 14,300 packages available to download - each
+	with their own specialized functions and code, all for some
+	different purpose. For a really in depth look at R Packages (what
+	they are, how to develop them), check out Hadley Wickham’s book
+	from O’Reilly,&nbsp;</span></span></span></font></font></font></span><a href="http://r-pkgs.had.co.nz/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">“R
+	Packages.”</span></span></span></span></font></font></span></font></span></a></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Side
+	note:</span></span></span></font></font></font></span></em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;A
+	package is not to be confused with a&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>library</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;(these
+	two terms are often conflated in colloquial speech about R). A
+	library is the place where the package is located on your computer.
+	To think of an analogy, a library is, well, a library… and a
+	package is a book within the library. The library is where the
+	books/packages are located.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Packages
+	are what make R so unique. Not only does base R have some great
+	functionality but these packages greatly expand its functionality.
+	And perhaps most special of all, each package is developed and
+	published by the R community at large and deposited in&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>repositories.</b></span></span></font></font></font></span></strong></p>
+</div>
+<div id="what-are-repositories" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>What
+	are repositories?</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">A
+	repository is a central location where many developed packages are
+	located and available for download.</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">There
+	are three big repositories:<br/>
+1.&nbsp;</span></span></span></font></font></font></span><strong><a href="https://cran.r-project.org/web/packages/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b><span style="background: transparent">CRAN
+	(Comprehensive R Archive Network):</span></b></span></span></font></font></span></font></span></a></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;R’s
+	main repository (&gt;12,100 packages available!)<br/>
+2.&nbsp;</span></span></span></font></font></font></span><strong><a href="https://bioconductor.org/packages/release/BiocViews.html#___Software" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b><span style="background: transparent">BioConductor:</span></b></span></span></font></font></span></font></span></a></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;A
+	repository mainly for bioinformatic-focused packages<br/>
+3.&nbsp;</span></span></span></font></font></font></span><strong><a href="https://github.com/collections" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b><span style="background: transparent">GitHub:</span></b></span></span></font></font></span></font></span></a></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;A
+	very popular, open source repository (not R specific!)</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Take
+	a second to explore the links above and check out the various
+	packages that are out there!</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-R-Packages_html_5cde1bb1a62bfe63.png" name="Image1" alt="The big three repositories for R packages" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	big three repositories for R packages</b></span></span></font></font></font></span></strong></p>
+</div>
+<div id="how-do-you-know-what-package-is-right-for-you" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>How
+	do you know what package is right for you?</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">So
+	you know where to find packages… but there are so many of them,
+	how can you find a package that will do what you are trying to do in
+	R? There are a few different avenues for exploring packages.</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">First,
+	CRAN groups all of its packages by their functionality/topic into 35
+	“themes.” It calls this its&nbsp;</span></span></span></font></font></font></span><a href="https://cran.r-project.org/web/views/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">“Task
+	view.”</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;This
+	at least allows you to narrow the packages you can look through to a
+	topic relevant to your interests.</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-R-Packages_html_99e674b16a86733.png" name="Image2" alt="CRAN’s Task View that groups packages into 35 topics" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>CRAN’s
+	“Task View” that groups packages into 35 topics</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Second,
+	there is a great website,&nbsp;</span></span></span></font></font></font></span><strong><a href="https://www.rdocumentation.org/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b><span style="background: transparent">RDocumentation,</span></b></span></span></font></font></span></font></span></a></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;which
+	is a search engine for packages and functions from CRAN,
+	BioConductor, and GitHub (ie: the big three repositories). If you
+	have a task in mind, this is a great way to search for specific
+	packages to help you accomplish that task! It also has a&nbsp;</span></span></span></font></font></font></span><a href="https://www.rdocumentation.org/taskviews" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">“task”
+	view</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;like
+	CRAN, that allows you to browse themes.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">More
+	often, if you have a specific task in mind, Googling that task
+	followed by “R package” is a great place to start! From there,
+	looking at tutorials, vignettes, and forums for people already doing
+	what you want to do is a great way to find relevant packages.</font></font></font></p>
+</div>
+<div id="how-do-you-install-packages" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>How
+	do you install packages?</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Great!
+	You’ve found a package you want… How do you install it?</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Installing
+	from CRAN</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+If
+	you are installing from the CRAN repository, use
+	the&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">install.packages()</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;function,
+	with the name of the package you want to install in quotes between
+	the parentheses (note: you can use either single or double quotes).
+	For example, if you want to install the package “ggplot2”, you
+	would use:&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">install.packages(&quot;ggplot2&quot;)</span></span></span></span></font></font></font></span></code></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Try
+	doing so in your R console! This command downloads the “ggplot2”
+	package from CRAN and installs it onto your computer.</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">If
+	you want to install multiple packages at once, you can do so by
+	using a character vector, like:&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">install.packages(c(&quot;ggplot2&quot;,
+	&quot;devtools&quot;, &quot;lme4&quot;))</span></span></span></span></font></font></font></span></code></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">If
+	you want to use RStudio’s graphical interface to install packages,
+	go to the Tools menu, and the first option should be “Install
+	packages…” If installing from CRAN, select it as the repository
+	and type the desired packages in the appropriate box.</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-R-Packages_html_31fbbc31791a34f9.png" name="Image3" alt="Various methods to install packages within R/RStudio" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Various
+	methods to install packages within R/RStudio</b></span></span></font></font></font></span></strong></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-R-Packages_html_4be6ddb405ac8c93.png" name="Image4" alt="Installing packages from CRAN through R/RStudio" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Installing
+	packages from CRAN through R/RStudio</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Installing
+	from Bioconductor</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+The
+	BioConductor repository uses their own method to&nbsp;</span></span></span></font></font></font></span><a href="https://www.bioconductor.org/install/" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">install
+	packages</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+	First, to get the basic functions required to install through
+	BioConductor, use:&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">source(&quot;https://bioconductor.org/biocLite.R&quot;)</span></span></span></span></font></font></font></span></code></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">This
+	makes the main install function of BioConductor,&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">biocLite()</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">,
+	available to you. Following this, you call the package you want to
+	install in quotes, between the parentheses of the&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">biocLite</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;command,
+	like so:&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">biocLite(&quot;GenomicFeatures&quot;)</span></span></span></span></font></font></font></span></code></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-R-Packages_html_ad53bcda1ef68686.png" name="Image5" alt="Installing packages with BioConductor" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Installing
+	packages with BioConductor</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Installing
+	from GitHub</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+This
+	is a more specific case that you probably won’t run into too
+	often. In the event you want to do this, you first must find the
+	package you want on GitHub and take note of both the package name
+	AND the author of the package. Check out&nbsp;</span></span></span></font></font></font></span><a href="http://kbroman.org/pkg_primer/pages/github.html" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">this
+	guide</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;for
+	installing from GitHub, but the general workflow is:</span></span></span></font></font></font></span></p>
+	<ol>
+		<li><p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">install.packages(&quot;devtools&quot;)</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;-
+		only run this if you don’t already have devtools installed. If
+		you’ve been following along with this lesson, you may have
+		installed it when we were practicing installations using the R
+		console</span></span></span></font></font></font></span></p>
+		<li><p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">library(devtools)</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;-
+		more on what this command is doing immediately below this</span></span></span></font></font></font></span></p>
+		<li><p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">install_github(&quot;author/package&quot;)</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;replacing
+		“author” and “package” with their GitHub username and the
+		name of the package.</span></span></span></font></font></font></span></p>
+	</ol>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-R-Packages_html_1ebf5c8046a00992.png" name="Image6" alt="Installing packages from GitHub" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Installing
+	packages from GitHub</b></span></span></font></font></font></span></strong></p>
+</div>
+<div id="loading-packages" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Loading
+	packages</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Installing
+	a package does not make its functions immediately available to you.
+	First you must&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>load</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;the
+	package into R; to do so, use the&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">library()</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;function.
+	Think of this like any other software you install on your computer.
+	Just because you’ve&nbsp;</span></span></span></font></font></font></span><em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">installed</span></span></span></font></font></font></span></em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;a
+	program, doesn’t mean it’s automatically running - you have to
+	open the program. Same with R. You’ve installed it, but now you
+	have to “open” it. For example, to “open” the “ggplot2”
+	package, you would run:</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">library(ggplot2)</span></span></span></span></font></font></font></span></code></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>NOTE:</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;Do&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>not</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;put
+	the package name in quotes! Unlike when you are installing the
+	packages, the&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">library()</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;command
+	does not accept package names in quotes!</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-R-Packages_html_fe4ab4be53b89566.png" name="Image7" alt="Step one of getting a package is installing it, but to use it, you must load it using library(); similar to installing R and then loading it by opening the .exe file" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Step
+	one of getting a package is installing it, but to use it, you must
+	load it using library(); similar to installing R and then loading it
+	by opening the .exe file</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">There
+	is an order to loading packages - some packages require other
+	packages to be loaded first (</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>dependencies</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">).
+	That package’s manual/help pages will help you out in finding that
+	order, if they are picky.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">If
+	you want to load a package using the RStudio interface, in the lower
+	right quadrant there is a tab called “Packages” that lists out
+	all of the packages and a brief description, as well as the version
+	number, of all of the packages you have installed. To load a package
+	just click on the checkbox beside the package name</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-R-Packages_html_bcca1844b0a1e0ad.png" name="Image8" alt="Using the RStudio interface to load a package" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Using
+	the RStudio interface to load a package</b></span></span></font></font></font></span></strong></p>
+</div>
+<div id="updating-removing-unloading-packages" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Updating,
+	removing, unloading packages</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Once
+	you’ve got a package, there are a few things you might need to
+	know how to do:</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Checking
+	what packages you have installed</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+If
+	you aren’t sure if you’ve already installed a package, or want
+	to check what packages are installed, you can use either
+	of:&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">installed.packages()</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;or&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">library()</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;with
+	nothing between the parentheses to check!</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">In
+	RStudio, that package tab introduced earlier is another way to look
+	at all of the packages you have installed.</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Updating
+	packages</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">You
+	can check what packages need an update with a call to the
+	function&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">old.packages()</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;This
+	will identify all packages that have been updated since you
+	installed them/last updated them.</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">To
+	update all packages, use&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">update.packages()</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+	If you only want to update a specific package, just use once
+	again&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">install.packages(&quot;packagename&quot;)</span></span></span></span></font></font></font></span></code></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-R-Packages_html_73c2246744b7c16f.png" name="Image9" alt="Functions used to see what packages are installed and update them" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Functions
+	used to see what packages are installed and update them</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Within
+	the RStudio interface, still in that Packages tab, you can click
+	“Update,” which will list all of the packages that are not up to
+	date. It gives you the option to update all of your packages, or
+	allows you to select specific packages.</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-R-Packages_html_9a62de26cbf142f1.png" name="Image10" alt="Using the RStudio interface to update your packages" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Using
+	the RStudio interface to update your packages</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">You
+	will want to periodically check in on your packages and check if
+	you’ve fallen out of date - be careful though! Sometimes an update
+	can change the functionality of certain functions, so if you re-run
+	some old code, the command may be changed or perhaps even outright
+	gone and you will need to update your code too!</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Unloading
+	packages</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Sometimes
+	you want to unload a package in the middle of a script - the package
+	you have loaded may not play nicely with another package you want to
+	use.</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">To
+	unload a given package you can use the&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">detach()</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;function.
+	For example,&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">detach(&quot;package:ggplot2&quot;,
+	unload=TRUE)</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;would
+	unload the ggplot2 package (that we loaded earlier). Within the
+	RStudio interface, in the Packages tab, you can simply unload a
+	package by unchecking the box beside the package name.</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-R-Packages_html_98dfb0dfa06f262.png" name="Image11" alt="Unloading or detaching a package" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Unloading
+	or “detaching” a package</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Uninstalling
+	packages</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">If
+	you no longer want to have a package installed, you can simply
+	uninstall it using the function&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">remove.packages()</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+	For example,&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">remove.packages(&quot;ggplot2&quot;)</span></span></span></span></font></font></font></span></code></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">(Try
+	that, but then actually re-install the ggplot2 package - it’s a
+	super useful plotting package!)</font></font></font></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Within
+	RStudio, in the Packages tab, clicking on the “X” at the end of
+	a package’s row will uninstall that package.</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-R-Packages_html_67edd18fa33ea82a.png" name="Image12" alt="Uninstalling packages" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Uninstalling
+	packages</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Sidenote:
+	How do you know what version of R you have?</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Sometimes,
+	when you are looking at a package that you might want to install,
+	you will see that it requires a certain version of R to run. To know
+	if you can use that package, you need to know what version of R you
+	are running!</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">One
+	way to know your R version is to check when you first open R/RStudio
+	- the first thing it outputs in the console tells you what version
+	of R is currently running. If you didn’t pay attention at the
+	beginning, you can type&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">version</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;into
+	the console and it will output information on the R version you are
+	running. Another helpful command is&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">sessionInfo()</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;-
+	it will tell you what version of R you are running along with a
+	listing of all of the packages you have loaded. The output of this
+	command is a great detail to include when posting a question to
+	forums - it tells potential helpers a lot of information about your
+	OS, R, and the packages (plus their version numbers!) that you are
+	using.</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-R-Packages_html_d15dc6c4e5b309b2.png" name="Image13" alt="Ways to see what version of R you are running" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Ways
+	to see what version of R you are running</b></span></span></font></font></font></span></strong></p>
+</div>
+<div id="using-the-commands-in-a-function" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Using
+	the commands in a function</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">In
+	all of this information about packages, we haven’t actually
+	discussed how to&nbsp;</span></span></span></font></font></font></span><em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">use</span></span></span></font></font></font></span></em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;a
+	package’s functions!</span></span></span></font></font></font></span></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">First,
+	you need to know what functions are included within a package. To do
+	this, you can look at the man/help pages included in all (well-made)
+	packages. In the console, you can use the&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">help()</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;function
+	to access a package’s help files. Try&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">help(package
+	= &quot;ggplot2&quot;)</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;and
+	you will see all of the&nbsp;</span></span></span></font></font></font></span><em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">many</span></span></span></font></font></font></span></em><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;functions
+	that ggplot2 provides. Within the RStudio interface, you can access
+	the help files through the Packages tab (again) - clicking on any
+	package name should open up the associated help files in the “Help”
+	tab, found in that same quadrant, beside the Packages tab. Clicking
+	on any one of these help pages will take you to that functions help
+	page, that tells you what that function is for and how to use it.</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-R-Packages_html_67b3365d3d215282.png" name="Image14" alt="The help functions available to you" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	help functions available to you</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Once
+	you know what function within a package you want to use, you simply
+	call it in the console like any other function we’ve been using
+	throughout this lesson. Once a package has been loaded, it is as if
+	it were a part of the base R functionality.</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">If
+	you still have questions about what functions within a package are
+	right for you or how to use them, many packages
+	include&nbsp;</span></span></span></font></font></font></span><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">“</span></span></span></font></font></font></span></strong><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>vignettes.”</b></span></span></font></font></font></span></strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;These
+	are extended help files, that include an overview of the package and
+	its functions, but often they go the extra mile and include detailed
+	examples of how to use the functions in plain words that you can
+	follow along with to see how to use the package. To see the
+	vignettes included in a package, you can use
+	the&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">browseVignettes()</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;function.
+	For example, let’s look at the vignettes included in
+	ggplot2:</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">browseVignettes(&quot;ggplot2&quot;)</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;.
+	You should see that there are two included vignettes: “Extending
+	ggplot2” and “Aesthetic specifications.” Exploring the
+	Aesthetic specifications vignette is a great example of how
+	vignettes can be helpful, clear instructions on how to use the
+	included functions.</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="03-R-Packages_html_86f26b0dd85ffd18.png" name="Image15" alt="How to browse vignettes for packages" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>How
+	to browse vignettes for packages</b></span></span></font></font></font></span></strong></p>
+</div>
+<div id="summary" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Summary</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">In
+	this lesson, we’ve explored R packages in depth. We examined what
+	a packages is (and how it differs from a library), what repositories
+	are, and how to find a package relevant to your interests. We
+	investigated all aspects of how packages work: how to install them
+	(from the various repositories), how to load them, how to check
+	which packages are installed, and how to update, uninstall, and
+	unload packages. We took a small detour and looked at how to check
+	what version of R you have, which is often an important detail to
+	know when installing packages. And finally, we spent some time
+	learning how to explore help files and vignettes, which often give
+	you a good idea of how to use a package and all of its functions.</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">If
+	you still want to learn more about R packages, here are two great
+	resources!&nbsp;</span></span></span></font></font></font></span><a href="https://www.datacamp.com/community/tutorials/r-packages-guide" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">R
+	Packages: A Beginner’s Guide</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;from
+	Adolfo Álvarez on DataCamp and a lesson from the University of
+	Washington, on an&nbsp;</span></span></span></font></font></font></span><a href="http://faculty.washington.edu/kenrice/rintro/sess08.pdf" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">Introduction
+	to R Packages</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;from
+	Ken Rice and Timothy Thornton.</span></span></span></font></font></font></span></p>
+</div>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+</body>
+</html>

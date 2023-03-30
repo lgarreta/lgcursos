@@ -1,0 +1,311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.4.7.2 (Linux)"/>
+	<meta name="created" content="2021-06-13T10:28:20.045770000"/>
+	<meta name="changed" content="2021-06-13T10:29:20.630709088"/>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		h1 { margin-bottom: 0.08in; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Liberation Serif", serif; font-size: 24pt; font-weight: bold }
+		h1.cjk { font-family: "Noto Serif CJK SC"; font-size: 24pt; font-weight: bold }
+		h1.ctl { font-family: "Lohit Devanagari"; font-size: 24pt; font-weight: bold }
+		h3 { margin-top: 0.1in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid }
+		h3.western { font-family: "Liberation Serif", serif; font-size: 14pt; font-weight: bold }
+		h3.cjk { font-family: "Noto Serif CJK SC"; font-size: 14pt; font-weight: bold }
+		h3.ctl { font-family: "Lohit Devanagari"; font-size: 14pt; font-weight: bold }
+		a:link { color: #000080; so-language: zxx; text-decoration: underline }
+		strong { font-weight: bold }
+		code.western { font-family: "Liberation Mono", monospace }
+		code.cjk { font-family: "Noto Sans Mono CJK SC", monospace }
+		code.ctl { font-family: "Liberation Mono", monospace }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><h1 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 110%; orphans: 2; widows: 2">
+<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="6" style="font-size: 25pt">RStudio
+Tour</font></font></font></h1>
+<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Now
+that we have RStudio installed, we should familiarize ourselves with
+the various components and functionality of it! RStudio provides a
+cheatsheet of the&nbsp;</span></span></span></font></font></font></span><a href="https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf" target="_blank"><span style="font-variant: normal"><font color="#337ab7"><span style="text-decoration: none"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">RStudio
+environment</span></span></span></span></font></font></span></font></span></a><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;-
+warning: this link initiates a download of a PDF from the RStudio
+GitHub.</span></span></span></font></font></font></span></p>
+<div id="the-various-quadrants" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>The
+	various quadrants</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Rstudio
+	can be roughly divided into four quadrants, each with specific and
+	varied functions, plus a main menu bar. When you first open RStudio,
+	you should see a window that looks roughly like this:</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="02-RStudio%20Tour_html_acfe17e05211cea7.png" name="Image1" alt="RStudio’s main interface" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>RStudio’s
+	main interface</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">You
+	may be missing the upper left quadrant and instead have the left
+	side of the screen with just one region, “Console” - if this is
+	the case, go to File &gt; New File &gt; R Script and now it should
+	more closely resemble the image. You can change the sizes of each of
+	the various quadrants by hovering your mouse over the spaces between
+	quadrants and click-dragging the divider to resize the sections.</font></font></font></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">We
+	will go through each of the regions and describe some of their main
+	functions. It would be impossible to cover everything that RStudio
+	can do, so we urge you to explore RStudio on your own too!</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="02-RStudio%20Tour_html_e4e282a3bd9f4dcf.png" name="Image2" alt="The four main quadrants of RStudio, plus the main menu bar" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	four main quadrants of RStudio, plus the main menu bar</b></span></span></font></font></font></span></strong></p>
+</div>
+<div id="the-menu-bar" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>The
+	menu bar</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">The
+	menu bar runs across the top of your screen and should have two
+	rows. The first row should be a fairly standard menu, starting with
+	“File” and “Edit.” Below that, there is a row of icons that
+	are shortcuts for functions that you’ll frequently use.</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="02-RStudio%20Tour_html_fba36acb08af4692.png" name="Image3" alt="The commonly used options of the main menu bar" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	commonly used options of the main menu bar</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">To
+	start, let’s explore the main sections of the menu bar that you
+	will use. The first being the File menu. Here we can open new or
+	saved files, open new or saved projects (we’ll have an entire
+	lesson in the future about R Projects, so stay tuned!), save our
+	current document or close RStudio. If you mouse over “New File”,
+	a new menu will appear that suggests the various file formats
+	available to you. R Script and R Markdown files are the most common
+	file types for use, but you can also generate R notebooks, web apps,
+	websites, or slide presentations. If you click on any one of these,
+	a new tab in the “Source” quadrant will open. We’ll spend more
+	time in a future lesson on R Markdown files and their use.</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="02-RStudio%20Tour_html_5b30bf1dacdbb98b.png" name="Image4" alt="The File menu" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	File menu</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">The
+	Session menu has some R specific functions, in which you can
+	restart, interrupt or terminate R - these can be helpful if R isn’t
+	behaving or is stuck and you want to stop what it is doing and start
+	from scratch.</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="02-RStudio%20Tour_html_ce9c7effe78f079c.png" name="Image5" alt="The Session menu" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	Session menu</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">The
+	Tools menu is a treasure trove of functions for you to explore. For
+	now, you should know that this is where you can go to install new
+	packages (see next lecture), set up your version control software
+	(see future lesson: Linking GitHub and RStudio), and set your
+	options and preferences for how RStudio looks and functions. For
+	now, we will leave this alone, but be sure to explore these menus on
+	your own once you have a bit more experience with RStudio and see
+	what you can change to best suit your preferences!</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="02-RStudio%20Tour_html_98acfbe5e2e964ea.png" name="Image6" alt="The Tools menu" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	Tools menu</b></span></span></font></font></font></span></strong></p>
+</div>
+<div id="the-console" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>The
+	console</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">This
+	region should look familiar to you - when you opened R, you were
+	presented with the console. This is where you type and execute
+	commands, and where the output of said command is displayed.</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="02-RStudio%20Tour_html_127072ff51a7b997.png" name="Image7" alt="The console" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	console</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">To
+	execute your first command, try typing&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">1
+	+ 1</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;then
+	enter at the&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">&gt;</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;prompt.
+	You should see the output&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">[1]
+	2</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;below
+	your command.</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="02-RStudio%20Tour_html_75c0b68519788bd6.png" name="Image8" alt="Typing into the console and getting an output" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Typing
+	into the console and getting an output</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Now
+	copy and paste the following into your console and hit enter.</font></font></font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">example
+	&lt;- matrix(c(1, 2, 3, 4, 5, 6, 7, 8), nrow = 4, ncol = 2)</span></span></span></span></font></font></font></span></code></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">This
+	creates a matrix with four rows and two columns, with the numbers 1
+	through 8.</font></font></font></p>
+</div>
+<div id="the-environmenthistory" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>The
+	environment/history</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">To
+	view this matrix, first look to the Environment quadrant, where you
+	should see the following:</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="02-RStudio%20Tour_html_2d05e97933c64dfe.png" name="Image9" alt="The environment quadrant" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	environment quadrant</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">Click
+	anywhere on the “example” line, and a new tab on the Source
+	quadrant should appear, showing the matrix you created. Any
+	dataframe or matrix that you create in R can be viewed this way in
+	RStudio.</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="02-RStudio%20Tour_html_470d63af7eb88e30.png" name="Image10" alt="Your newly made matrix, opened in a new tab of the source panel" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Your
+	newly made matrix, opened in a new tab of the source panel</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">RStudio
+	also tells you some information about the object in the environment,
+	like whether it is a list or a dataframe or if it contains numbers,
+	integers or characters. This is very helpful information to have as
+	some functions only work with certain classes of data. And knowing
+	what kind of data you have is the first step to that.</font></font></font></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">The
+	quadrant has two other tabs running across the top of it. We’ll
+	just look at the History tab now. Your history tab should look
+	something like this:</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="02-RStudio%20Tour_html_46426d025590d889.png" name="Image11" alt="The history tab" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	history tab</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Here
+	you will see the commands that we have run in this session of R. If
+	you click on any one of them, you can click “To Console” or “To
+	Source” and this will either rerun the command in the console, or
+	will move the command to the source, respectively. Do so now for
+	your&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">example</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;matrix
+	and send it to Source.</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="02-RStudio%20Tour_html_634e9872e2afdc41.png" name="Image12" alt="The history tab" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	history tab</b></span></span></font></font></font></span></strong></p>
+</div>
+<div id="the-sourcethe-script-editor-panel" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>The
+	source/The script editor panel</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">The
+	Source panel is where you will be spending most of your time in
+	RStudio. This is where you store the R commands that you want to
+	save for later, either as a record of what you did or as a way to
+	rerun code. We’ll spend a lot of time in this quadrant when we
+	discuss R Markdown, but for now, click the save icon along the top
+	of this quadrant and save the script as&nbsp;</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#333333"><font face="monospace"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">my_first_R_script.R</span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;Now
+	you will always have a record of creating this matrix.</span></span></span></font></font></font></span></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="02-RStudio%20Tour_html_9852249c4961e91a.png" name="Image13" alt="Your first R script!" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Your
+	first R script!</b></span></span></font></font></font></span></strong></p>
+</div>
+<div id="fileshelpplotspackages-panel" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Files/help/plots/packages
+	panel</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">The
+	final region we’ll look at occupies the bottom right of the
+	RStudio window. In this quadrant, five tabs run across the top:
+	Files, Plots, Packages, Help, and Viewer.</font></font></font></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">In
+	Files, you can see all of the files in your current working
+	directory. If this isn’t where you want to save or retrieve files
+	from, you can also change the current working directory in this tab
+	using the ellipsis at the far right, finding the desired folder, and
+	then under the “More” cogwheel, setting this new folder as the
+	working directory.</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="02-RStudio%20Tour_html_16888b2d463a78a5.png" name="Image14" alt="The files tab" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	files tab</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">In
+	the Plots tab, if you generate a plot with your code, it will appear
+	here. You can use the arrows to navigate to previously generated
+	plots. The Zoom function will open the plot in a new window, that is
+	much larger than the quadrant. Export is how you save the plot. You
+	can either save it as an image or as a PDF. The broom icon clears
+	all plots from memory.</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="02-RStudio%20Tour_html_cc489aa9da7ddc76.png" name="Image15" alt="The plots tab" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	plots tab</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">The
+	Packages tab will be explored more in depth in the next lesson on R
+	packages. Here you can see all the packages you have installed, load
+	and unload these packages, and update them.</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="02-RStudio%20Tour_html_450fd9ab6a42cdce.png" name="Image16" alt="The packages tab" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	packages tab</b></span></span></font></font></font></span></strong></p>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">The
+	Help tab is where you find the documentation for your R packages and
+	various functions. In the upper right of this panel there is a
+	search function for when you have a specific function or package in
+	question.</font></font></font></p>
+	<p style="font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#333333"><img src="02-RStudio%20Tour_html_6d9dd5527999f9a5.png" name="Image17" alt="The help tab" align="bottom" width="960" height="600" border="0"/>
+</font></p>
+	<p style="margin-bottom: 0.1in; orphans: 2; widows: 2"><strong><span style="font-variant: normal"><font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>The
+	help tab</b></span></span></font></font></font></span></strong></p>
+</div>
+<div id="summary" dir="ltr"><h3 class="western" style="margin-top: 0.21in; margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+	<font color="#333333"><font face="inherit"><font size="5" style="font-size: 18pt"><b>Summary</b></font></font></font></h3>
+	<p style="margin-bottom: 0.1in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+	<font color="#333333"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 10pt">In
+	this lesson we took a tour of the RStudio software. We became
+	familiar with the main menu and its various menus. We looked at the
+	Console, where R code is input and run. We then moved on to the
+	Environment panel that lists all of the objects that have been
+	created within an R session and allows you to view these objects in
+	a new tab in Source. In this same quadrant, there is a History tab,
+	that keeps a record of all commands that have been run. It also
+	presents the option to either rerun the command in the Console, or
+	send the command to Source, to be saved. Source is where you save
+	your R commands. And the bottom right quadrant contains a listing of
+	all the files in your working directory, displays generated plots,
+	lists your installed packages, and supplies help files for when you
+	need some assistance! Take some time to explore RStudio on your own!</font></font></font></p>
+</div>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+</body>
+</html>
