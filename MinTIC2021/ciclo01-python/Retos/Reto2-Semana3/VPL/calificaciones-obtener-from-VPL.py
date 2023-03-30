@@ -1,0 +1,1 @@
+/home/lg/repos/lgcursos/Python-MinTIC-2022/docs/scripts/calificaciones-obtener-from-VPL.py

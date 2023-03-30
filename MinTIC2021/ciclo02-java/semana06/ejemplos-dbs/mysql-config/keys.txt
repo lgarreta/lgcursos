@@ -1,0 +1,6 @@
+MySQL
+root : usuarioA1.
+
+usuario > usuarioA1.
+
+Window service name : MySQL80 

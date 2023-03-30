@@ -1,0 +1,1 @@
+- Programa luce bien pero tiene errores Escribe todo a archivos

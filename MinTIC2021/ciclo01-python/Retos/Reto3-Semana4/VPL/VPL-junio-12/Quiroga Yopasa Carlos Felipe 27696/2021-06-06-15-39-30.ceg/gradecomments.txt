@@ -1,0 +1,78 @@
+-Failed tests
+Test 1: Prueba1
+Test 5: Prueba5
+-Test 1: Prueba1 (-20.000)
+Incorrect program output
+ --- Input ---
+>45
+>10000
+>
+
+ --- Program output ---
+>introduzca numero de horas trabajadas: Introduzca valor de la hora: 450000
+>75000.0
+>525000.0
+>47250.0
+>21000.0
+>21000.0
+>89250.0
+>435750.0
+>43732.5
+>43732.5
+>5250.0
+>21892.5
+
+ --- Expected output (numbers)---
+>400000
+>75000.0
+>475000.0
+>42750.0
+>19000.0
+>19000.0
+>80750.0
+>394250.0
+>39567.5
+>39567.5
+>4750.0
+>19807.5
+
+-Test 5: Prueba5 (-20.000)
+Incorrect program output
+ --- Input ---
+>50
+>10000
+>
+
+ --- Program output ---
+>introduzca numero de horas trabajadas: Introduzca valor de la hora: 500000
+>150000.0
+>650000.0
+>58500.0
+>26000.0
+>26000.0
+>110500.0
+>539500.0
+>54145.0
+>54145.0
+>6500.0
+>27105.0
+
+ --- Expected output (numbers)---
+>400000
+>150000.0
+>550000.0
+>49500.0
+>22000.0
+>22000.0
+>93500.0
+>456500.0
+>45815.0
+>45815.0
+>5500.0
+>22935.0
+
+-Summary of tests
+>+------------------------------+
+>|  5 tests run/ 3 tests passed |
+>+------------------------------+
+

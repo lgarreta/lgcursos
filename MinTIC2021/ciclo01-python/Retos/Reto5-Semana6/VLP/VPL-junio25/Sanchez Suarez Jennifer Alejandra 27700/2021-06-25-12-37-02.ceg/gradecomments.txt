@@ -1,0 +1,2 @@
+- Esta bien la mayoría de funciones
+- Filtrar no funciona

@@ -1,0 +1,6 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CASO: 1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.util.ArrayList.size()" because "this.listaEstudiantes" is null
+        at DirectorioDAO.eliminar(DirectorioDAO.java:113)
+        at Controlador.eliminar(Controlador.java:66)
+        at Controlador.iniciar(Controlador.java:37)
+        at ProgramaDirectorio.main(ProgramaDirectorio.java:10)

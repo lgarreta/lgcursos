@@ -1,0 +1,28 @@
+Salió este error:
+Aug 22, 2021 8:58:17 PM DirectorioDAO buscar
+SEVERE: null
+java.sql.SQLException: [SQLITE_ERROR] SQL error or missing database (no such column: correoInstitucional)
+        at org.sqlite.DB.newSQLException(DB.java:383)
+        at org.sqlite.DB.newSQLException(DB.java:387)
+        at org.sqlite.DB.throwex(DB.java:374)
+        at org.sqlite.NativeDB.prepare(Native Method)
+        at org.sqlite.DB.prepare(DB.java:123)
+        at org.sqlite.Stmt.executeQuery(Stmt.java:121)
+        at DirectorioDAO.buscar(DirectorioDAO.java:61)
+        at Controlador.buscar(Controlador.java:48)
+        at Controlador.iniciar(Controlador.java:22)
+        at ProgramaDirectorio.main(ProgramaDirectorio.java:5)
+
+Aug 22, 2021 8:58:17 PM DirectorioDAO buscar
+SEVERE: null
+java.sql.SQLException: [SQLITE_ERROR] SQL error or missing database (no such column: correoInstitucional)
+        at org.sqlite.DB.newSQLException(DB.java:383)
+        at org.sqlite.DB.newSQLException(DB.java:387)
+        at org.sqlite.DB.throwex(DB.java:374)
+        at org.sqlite.NativeDB.prepare(Native Method)
+        at org.sqlite.DB.prepare(DB.java:123)
+        at org.sqlite.Stmt.executeQuery(Stmt.java:121)
+        at DirectorioDAO.buscar(DirectorioDAO.java:61)
+        at Controlador.modificar(Controlador.java:66)
+        at Controlador.iniciar(Controlador.java:23)
+        at ProgramaDirectorio.main(ProgramaDirectorio.java:5)

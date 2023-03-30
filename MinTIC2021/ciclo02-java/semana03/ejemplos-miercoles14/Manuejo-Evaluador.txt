@@ -1,0 +1,14 @@
+Una vez terminado su programa, compilado y probado. Puede utilizar el evaluador que he realizado para probar este reto antes de subirlo al evaluado del VPL.
+
+Para usarlo siga los siguientes pasos:
+1. Copie o descargue el evaluador en la misma carpeta de trabajo donde está su programa en Java.
+2. Habra un terminal o CMD de windows que quede ubicado en la misma carpeta de trabajo.
+3. Ejecute:
+   python3 evaluador.py UsoFactura
+
+ Donde UsoFactura es el nombre del archivo en java (sin extension) que contiene el programa o función main.
+
+4. Revise línea por línes para ver donde difiere las salidad del EVALUADOR versu las salida de su PROGRAMA.
+
+5. Corrija y vuelva a realizar el mismo procedimiento para probar otra vez.
+

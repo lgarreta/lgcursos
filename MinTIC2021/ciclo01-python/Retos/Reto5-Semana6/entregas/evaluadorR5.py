@@ -1,0 +1,1 @@
+/home/lg/repos/lgcursos/MiniTIC/Python-MinTIC-2022/Retos/Reto5-Semana6/evaluadorR5.py

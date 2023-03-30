@@ -1,0 +1,46 @@
+README
+
+Step 1.  Create table and load sample data
+
+The first thing you have to do is create the database table and load sample data.
+
+Using your MySQL tool, execute the SQL file: data.sql
+
+This script does the following
+- Creates a database schema: demo
+- Creates a table: employees
+- Inserts three rows of sample data
+
+Step 2: Review Driver.java and the database connection information
+
+- The program attempts to connect to the demo schema running on localhost
+-- jdbc:mysql://localhost:3306/demo
+-- You may need to adjust this for your local environment
+
+- The program make use of databse user id "student" and password "student"
+- You may need to adjust this for your local environment
+
+Step 3.  Compile the program
+
+In a command-line window, type:  
+
+cd <your-download-directory>/simple-jdbc
+javac Driver.java
+
+
+Step 4.  Run the program
+
+Type: run.bat
+-- (If you are using Linux: run.sh is available)
+
+The batch file will set the classpath for the MySQL driver and then execute the program.
+
+Step 5:  Confirm the results
+
+The program will display the following output
+
+Doe, John
+Public, Mary
+Queue, Susan
+
+

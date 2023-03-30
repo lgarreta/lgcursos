@@ -1,0 +1,21 @@
+ana gonzales
+35
+500.5
+maria belen
+40
+300.8
+pedro paramo
+25
+100.1
+lady arciniegas
+33
+200
+john
+21
+100.5
+pacho
+22
+340
+mauricio galan
+38
+250

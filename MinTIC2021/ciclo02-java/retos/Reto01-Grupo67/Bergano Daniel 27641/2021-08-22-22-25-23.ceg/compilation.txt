@@ -1,0 +1,189 @@
+UsoFactura.java:2: error: cannot find symbol
+    public static void main (string argumentos[]){
+                             ^
+  symbol:   class string
+  location: class UsoFactura
+Factura.java:1: error: cannot find symbol
+import java.util.scanner;
+                ^
+  symbol:   class scanner
+  location: package java.util
+Factura.java:4: error: cannot find symbol
+    scanner lector;
+    ^
+  symbol:   class scanner
+  location: class Factura
+UsoFactura.java:3: error: cannot find symbol
+        Factura = miFactura;
+        ^
+  symbol:   variable Factura
+  location: class UsoFactura
+UsoFactura.java:3: error: cannot find symbol
+        Factura = miFactura;
+                  ^
+  symbol:   variable miFactura
+  location: class UsoFactura
+UsoFactura.java:4: error: cannot find symbol
+        Factura = new Factura ();
+        ^
+  symbol:   variable Factura
+  location: class UsoFactura
+UsoFactura.java:6: error: cannot find symbol
+        miFactura.mostrarmenu ();
+        ^
+  symbol:   variable miFactura
+  location: class UsoFactura
+UsoFactura.java:7: error: cannot find symbol
+        int opcion = miFactura.leeropcion();
+                     ^
+  symbol:   variable miFactura
+  location: class UsoFactura
+UsoFactura.java:11: error: package system does not exist
+              system.out.println ("pago de servicio de enegia ");
+                    ^
+UsoFactura.java:12: error: cannot find symbol
+              miFactura.leerdatos ();
+              ^
+  symbol:   variable miFactura
+  location: class UsoFactura
+UsoFactura.java:13: error: cannot find symbol
+              miFactura.calculodeenergia ();
+              ^
+  symbol:   variable miFactura
+  location: class UsoFactura
+UsoFactura.java:14: error: cannot find symbol
+              miFactura.mostrarResultados ();
+              ^
+  symbol:   variable miFactura
+  location: class UsoFactura
+UsoFactura.java:15: error: package system does not exist
+              system.out.println  ("");
+                    ^
+UsoFactura.java:19: error: package system does not exist
+              system.out.println ("pago de servicio de acueducto");
+                    ^
+UsoFactura.java:20: error: cannot find symbol
+              miFactura.leerdatos ();
+              ^
+  symbol:   variable miFactura
+  location: class UsoFactura
+UsoFactura.java:21: error: cannot find symbol
+              miFactura.calculovaloragua ();
+              ^
+  symbol:   variable miFactura
+  location: class UsoFactura
+UsoFactura.java:22: error: cannot find symbol
+              miFactura.mostrarResultados ();
+              ^
+  symbol:   variable miFactura
+  location: class UsoFactura
+UsoFactura.java:23: error: package system does not exist
+              system.out.println  ("");
+                    ^
+UsoFactura.java:27: error: package system does not exist
+              system.out.println ("pago de gas natural");
+                    ^
+UsoFactura.java:28: error: cannot find symbol
+              miFactura.leerdatos ();
+              ^
+  symbol:   variable miFactura
+  location: class UsoFactura
+UsoFactura.java:29: error: cannot find symbol
+              miFactura.calculovalorgas ();
+              ^
+  symbol:   variable miFactura
+  location: class UsoFactura
+UsoFactura.java:30: error: cannot find symbol
+              miFactura.mostrarResultados ();
+              ^
+  symbol:   variable miFactura
+  location: class UsoFactura
+UsoFactura.java:31: error: package system does not exist
+              system.out.println ("");
+                    ^
+UsoFactura.java:35: error: package system does not exist
+              system.out.println ("Hasta pronto");
+                    ^
+UsoFactura.java:36: error: cannot find symbol
+              system.exit (0);
+              ^
+  symbol:   variable system
+  location: class UsoFactura
+UsoFactura.java:39: error: package system does not exist
+              system.out.println ("opcion invalida");
+                    ^
+Factura.java:21: error: cannot find symbol
+        lector = new scanner(system.in);
+                     ^
+  symbol:   class scanner
+  location: class Factura
+Factura.java:21: error: cannot find symbol
+        lector = new scanner(system.in);
+                             ^
+  symbol:   variable system
+  location: class Factura
+Factura.java:28: error: package system does not exist
+        system.out.println("ingrese estrato");
+              ^
+Factura.java:30: error: package system does not exist
+        system.out.println("cantidad consumida");
+              ^
+Factura.java:54: error: cannot find symbol
+        descuento();
+        ^
+  symbol:   method descuento()
+  location: class Factura
+Factura.java:62: error: cannot find symbol
+        descuento();
+        ^
+  symbol:   method descuento()
+  location: class Factura
+Factura.java:70: error: cannot find symbol
+        descuento();
+        ^
+  symbol:   method descuento()
+  location: class Factura
+Factura.java:76: error: package system does not exist
+        system.out.println("consumo tota es: " + consumo);
+              ^
+Factura.java:77: error: package system does not exist
+        system.out.println("valor unidad: " + valorunitario);
+              ^
+Factura.java:78: error: package system does not exist
+        system.out.println("estrato de la casa: " + estrato);
+              ^
+Factura.java:79: error: package system does not exist
+        system.out.println("costo total " + costototal);
+              ^
+Factura.java:80: error: package system does not exist
+        system.out.println("descuento o sobrecosto " + descuento);
+              ^
+Factura.java:81: error: package system does not exist
+        system.out.println("descuento por daños" + impuesto);
+              ^
+Factura.java:82: error: package system does not exist
+        system.out.println("total a pagar" + valorapagar);
+              ^
+Factura.java:86: error: package system does not exist
+        system.out.println("PAGO DE RECIBOS PÚBLICOS");
+              ^
+Factura.java:87: error: package system does not exist
+        system.out.println("seleccione el servicio público");
+              ^
+Factura.java:88: error: package system does not exist
+        system.out.println("1. Energía");
+              ^
+Factura.java:89: error: package system does not exist
+        system.out.println("2. Acueducto");
+              ^
+Factura.java:90: error: package system does not exist
+        system.out.println("3.  Gas natural");
+              ^
+Factura.java:91: error: package system does not exist
+        system.out.println("4. salir");
+              ^
+Factura.java:95: error: package system does not exist
+        system.out.println("opcion: ");
+              ^
+47 errors
+Not compiled

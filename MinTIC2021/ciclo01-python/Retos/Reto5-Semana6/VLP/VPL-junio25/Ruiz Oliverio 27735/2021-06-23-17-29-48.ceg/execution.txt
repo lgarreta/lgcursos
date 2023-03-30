@@ -1,0 +1,133 @@
+Testing 1/1 : Prueba1
+
+<|--
+-Test 1: Prueba1 (-100.000)
+Incorrect program output
+ --- Input ---
+>3
+>Marina Torres
+>1088345678
+>3101234567
+>3
+>Antonio Cortes
+>1044678123
+>3150987654
+>1
+>2
+>M
+>4
+>Antonio Cortes
+>5
+>1044678123
+>1
+>6
+>
+
+ --- Program output ---
+>    
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario 
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Elija un menu: Digite la información del beneficiario a agregar:
+>   El beneficiario ha sido agregado al listado
+> 
+
+ --- Expected output (text)---
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Digite la información del beneficiario a agregar:
+>El beneficiario ha sido agregado
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Digite la información del beneficiario a agregar:
+>El beneficiario ha sido agregado
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Listado de beneficiarios
+>Marina Torres
+>1088345678
+>3101234567
+>Antonio Cortes
+>1044678123
+>3150987654
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Digite la letra por la que empiezan los beneficiarios:
+>Listado filtrado de beneficiarios:
+>Marina Torres
+>1088345678
+>3101234567
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Digite el nombre y apellido del beneficiario a buscar:
+>Antonio Cortes
+>1044678123
+>3150987654
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Digite la cedula del beneficiario a borrar:
+>El usuario ha sido eliminado del listado
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Listado de beneficiarios
+>Marina Torres
+>1088345678
+>3101234567
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Hasta pronto
+
+--|>
+
+<|--
+-Summary of tests
+>+------------------------------+
+>|  1  test run/ 0 tests passed |
+>+------------------------------+
+
+--|>
+
+Grade :=>> 0

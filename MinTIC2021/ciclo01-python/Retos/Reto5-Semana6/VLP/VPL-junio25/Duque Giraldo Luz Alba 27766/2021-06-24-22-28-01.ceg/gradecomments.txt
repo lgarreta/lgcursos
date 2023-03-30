@@ -1,0 +1,3 @@
+- Programa con estructuras muy avanzadas, no incorpora lo básico aprendido en el curso sino cosas no vistas y complejas de usar.
+
+- No está diseñado para evaluarse automaticamente.

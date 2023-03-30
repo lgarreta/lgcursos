@@ -1,0 +1,26 @@
+PAGO DE SERVICIOS PÚBLICOS
+Seleccione el servicio público:
+1. Energia
+2. Acueducto
+3. Gas Natural
+4. Salir 
+Opción:
+Pago de Servicio de Gas Natural
+Estrato del inmueble: 
+Consumo del inmueble: 
+El consumo fue: 13
+Valor unidad: 5234.0
+Estrato del inmueble: 5
+Costo total: 68042.0
+Descuento o sobrecosto: 17010.5
+Impuesto por infraestructura: 680.42
+TOTAL A PAGAR: 85732.92
+
+PAGO DE SERVICIOS PÚBLICOS
+Seleccione el servicio público:
+1. Energia
+2. Acueducto
+3. Gas Natural
+4. Salir 
+Opción:
+Hasta pronto

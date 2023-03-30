@@ -1,0 +1,6 @@
+root:usuarioA123
+
+usuario:usuarioA1.
+
+windows-service:MySQL80
+

@@ -1,0 +1,206 @@
+Testing 1/1 : Prueba1
+
+<|--
+-Test 1: Prueba1 (-5.000)
+Program terminated but unknown reason.
+Incorrect program output
+ --- Input ---
+>1
+>Luis Ernesto
+>Poveda Garcés
+>1980-05-29
+>lpovedag@lafloresta.edu.co
+>luispov@hotmail.com
+>3167556688
+>2916565
+>Contaduría
+>1
+>Mariana
+>Casas Paz
+>1984-02-12
+>mcasasp@lafloresta.edu.co
+>mariana12@hotmail.com
+>3125674455
+>7124432
+>Medicina
+>2
+>lpovedag@lafloresta.edu.co
+>3
+>lpovedag@lafloresta.edu.co
+>luispov@hotmail.com
+>3125674451
+>7124432
+>Derecho
+>4
+>lpovedag@lafloresta.edu.co
+>5
+>6
+>
+
+ --- Program output ---
+>Internal error, execve fails: Exec format error
+
+ --- Expected output (text)---
+>INSTITUTO LA FLORESTA
+>Seleccione tarea a realizar:
+>1. Ingresar estudiante
+>2. Buscar estudiante
+>3. Modificar estudiante
+>4. Eliminar Estudiante
+>5. Ver directorio de estudiantes
+>6. Salir
+>Opción:
+> 
+>Ingresar estudiante
+>Ingresar nombres:
+>
+>Ingresar apellidos:
+>
+>Ingresar fecha de nacimiento (YYYY-MM-DD):
+>
+>Ingresar correo institucional:
+>
+>Ingresar correo personal:
+>
+>Ingresar número de celular:
+>
+>Ingresar número fijo:
+>
+>Ingresar programa:
+>
+>Se agregó el estudiante
+>
+>INSTITUTO LA FLORESTA
+>Seleccione tarea a realizar:
+>1. Ingresar estudiante
+>2. Buscar estudiante
+>3. Modificar estudiante
+>4. Eliminar Estudiante
+>5. Ver directorio de estudiantes
+>6. Salir
+>Opción:
+> 
+>Ingresar estudiante
+>Ingresar nombres:
+>
+>Ingresar apellidos:
+>
+>Ingresar fecha de nacimiento (YYYY-MM-DD):
+>
+>Ingresar correo institucional:
+>
+>Ingresar correo personal:
+>
+>Ingresar número de celular:
+>
+>Ingresar número fijo:
+>
+>Ingresar programa:
+>
+>Se agregó el estudiante
+>
+>INSTITUTO LA FLORESTA
+>Seleccione tarea a realizar:
+>1. Ingresar estudiante
+>2. Buscar estudiante
+>3. Modificar estudiante
+>4. Eliminar Estudiante
+>5. Ver directorio de estudiantes
+>6. Salir
+>Opción:
+> 
+>Buscar estudiante
+>Ingresar correo institucional:
+>
+>Información del estudiante
+>Nombres: Luis Ernesto
+>Apellidos: Poveda Garcés
+>Fecha nacimiento: 1980-05-29
+>Correo institucional: lpovedag@lafloresta.edu.co
+>Correo personal: luispov@hotmail.com
+>Número de teléfono celular: 3167556688
+>Número de teléfono fijo: 2916565
+>Programa académico: Contaduría
+>
+>INSTITUTO LA FLORESTA
+>Seleccione tarea a realizar:
+>1. Ingresar estudiante
+>2. Buscar estudiante
+>3. Modificar estudiante
+>4. Eliminar Estudiante
+>5. Ver directorio de estudiantes
+>6. Salir
+>Opción:
+> 
+>Modificar estudiante
+>Ingresar correo institucional:
+> 
+>Ingresar correo personal:
+> 
+>Ingresar número de celular:
+> 
+>Ingresar número fijo:
+>
+>Ingresar programa:
+>
+>Se modificó el estudiante
+>
+>INSTITUTO LA FLORESTA
+>Seleccione tarea a realizar:
+>1. Ingresar estudiante
+>2. Buscar estudiante
+>3. Modificar estudiante
+>4. Eliminar Estudiante
+>5. Ver directorio de estudiantes
+>6. Salir
+>Opción:
+> 
+>Eliminar estudiante
+>Ingresar correo institucional:
+> 
+>Se eliminó el estudiante
+>
+>INSTITUTO LA FLORESTA
+>Seleccione tarea a realizar:
+>1. Ingresar estudiante
+>2. Buscar estudiante
+>3. Modificar estudiante
+>4. Eliminar Estudiante
+>5. Ver directorio de estudiantes
+>6. Salir
+>Opción:
+>
+>El directorio de los estudiantes
+>
+>Nombres: Mariana
+>Apellidos: Casas Paz
+>Fecha nacimiento: 1984-02-12
+>Correo institucional: mcasasp@lafloresta.edu.co
+>Correo personal: mariana12@hotmail.com
+>Número de teléfono celular: 3125674455
+>Número de teléfono fijo: 7124432
+>Programa académico: Medicina
+>
+>INSTITUTO LA FLORESTA
+>Seleccione tarea a realizar:
+>1. Ingresar estudiante
+>2. Buscar estudiante
+>3. Modificar estudiante
+>4. Eliminar Estudiante
+>5. Ver directorio de estudiantes
+>6. Salir
+>Opción:
+> 
+>Hasta pronto
+
+--|>
+
+<|--
+-Summary of tests
+>+------------------------------+
+>|  1  test run/ 0 tests passed |
+>+------------------------------+
+
+--|>
+
+Grade :=>> 0

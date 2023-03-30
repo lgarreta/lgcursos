@@ -1,0 +1,162 @@
+Testing 1/5 : Prueba1
+Testing 2/5 : Prueba2
+Testing 3/5 : Prueba3
+Testing 4/5 : Prueba4
+Testing 5/5 : Prueba5
+
+<|--
+-Failed tests
+Test 1: Prueba1
+Test 2: Prueba2
+Test 3: Prueba3
+Test 4: Prueba4
+Test 5: Prueba5
+--|>
+
+<|--
+-Test 1: Prueba1 (-20.000)
+Incorrect program output
+ --- Input ---
+>45
+>10000
+>
+
+ --- Program output ---
+>Nombre docente: Horas: Valor: Traceback (most recent call last):
+>  File "reto4.py", line 13, in <module>
+>    valorHora=int(input("Valor: "))
+>ValueError: invalid literal for int() with base 10: ''
+
+ --- Expected output (numbers)---
+>400000
+>75000.0
+>475000.0
+>42750.0
+>19000.0
+>19000.0
+>80750.0
+>394250.0
+>39567.5
+>39567.5
+>4750.0
+>19807.5
+
+-Test 2: Prueba2 (-20.000)
+Incorrect program output
+ --- Input ---
+>40
+>10000
+>
+
+ --- Program output ---
+>Nombre docente: Horas: Valor: Traceback (most recent call last):
+>  File "reto4.py", line 13, in <module>
+>    valorHora=int(input("Valor: "))
+>ValueError: invalid literal for int() with base 10: ''
+
+ --- Expected output (numbers)---
+>400000
+>0
+>400000
+>36000.0
+>16000.0
+>16000.0
+>68000.0
+>332000.0
+>33320.0
+>33320.0
+>4000.0
+>16680.0
+
+-Test 3: Prueba3 (-20.000)
+Incorrect program output
+ --- Input ---
+>38
+>10000
+>
+
+ --- Program output ---
+>Nombre docente: Horas: Valor: Traceback (most recent call last):
+>  File "reto4.py", line 13, in <module>
+>    valorHora=int(input("Valor: "))
+>ValueError: invalid literal for int() with base 10: ''
+
+ --- Expected output (numbers)---
+>380000
+>0
+>380000
+>34200.0
+>15200.0
+>15200.0
+>64600.0
+>315400.0
+>31654.0
+>31654.0
+>3800.0
+>15846.0
+
+-Test 4: Prueba4 (-20.000)
+Incorrect program output
+ --- Input ---
+>20
+>10000
+>
+
+ --- Program output ---
+>Nombre docente: Horas: Valor: Traceback (most recent call last):
+>  File "reto4.py", line 13, in <module>
+>    valorHora=int(input("Valor: "))
+>ValueError: invalid literal for int() with base 10: ''
+
+ --- Expected output (numbers)---
+>200000
+>0
+>200000
+>18000.0
+>8000.0
+>8000.0
+>34000.0
+>166000.0
+>16660.0
+>16660.0
+>2000.0
+>8340.0
+
+-Test 5: Prueba5 (-20.000)
+Incorrect program output
+ --- Input ---
+>50
+>10000
+>
+
+ --- Program output ---
+>Nombre docente: Horas: Valor: Traceback (most recent call last):
+>  File "reto4.py", line 13, in <module>
+>    valorHora=int(input("Valor: "))
+>ValueError: invalid literal for int() with base 10: ''
+
+ --- Expected output (numbers)---
+>400000
+>150000.0
+>550000.0
+>49500.0
+>22000.0
+>22000.0
+>93500.0
+>456500.0
+>45815.0
+>45815.0
+>5500.0
+>22935.0
+
+--|>
+
+<|--
+-Summary of tests
+>+------------------------------+
+>|  5 tests run/ 0 tests passed |
+>+------------------------------+
+
+--|>
+
+Grade :=>> 0

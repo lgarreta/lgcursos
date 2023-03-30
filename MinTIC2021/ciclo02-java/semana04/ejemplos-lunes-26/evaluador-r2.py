@@ -1,0 +1,1 @@
+/home/lg/repos/lgcursos/Cursos-MinTIC-2021/java/retos/Reto-02/scripts-VPL/evaluador-r2.py

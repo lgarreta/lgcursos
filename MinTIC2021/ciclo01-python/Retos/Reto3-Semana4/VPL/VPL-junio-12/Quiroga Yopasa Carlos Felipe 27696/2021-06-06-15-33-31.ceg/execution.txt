@@ -1,0 +1,130 @@
+Testing 1/5 : Prueba1
+Testing 2/5 : Prueba2
+Testing 3/5 : Prueba3
+Testing 4/5 : Prueba4
+Testing 5/5 : Prueba5
+
+<|--
+-Failed tests
+Test 2: Prueba2
+Test 3: Prueba3
+Test 4: Prueba4
+--|>
+
+<|--
+-Test 2: Prueba2 (-20.000)
+Incorrect program output
+ --- Input ---
+>40
+>10000
+>
+
+ --- Program output ---
+>introduzca numero de horas trabajadas: Introduzca valor de la hora: 400000
+>0.0
+>400000.0
+>36000.0
+>16000.0
+>16000.0
+>68000.0
+>332000.0
+>33320.0
+>33320.0
+>4000.0
+>16680.0
+
+ --- Expected output (numbers)---
+>400000
+>0
+>400000
+>36000.0
+>16000.0
+>16000.0
+>68000.0
+>332000.0
+>33320.0
+>33320.0
+>4000.0
+>16680.0
+
+-Test 3: Prueba3 (-20.000)
+Incorrect program output
+ --- Input ---
+>38
+>10000
+>
+
+ --- Program output ---
+>introduzca numero de horas trabajadas: Introduzca valor de la hora: 380000
+>-30000.0
+>350000.0
+>31500.0
+>14000.0
+>14000.0
+>59500.0
+>290500.0
+>29155.0
+>29155.0
+>3500.0
+>14595.0
+
+ --- Expected output (numbers)---
+>380000
+>0
+>380000
+>34200.0
+>15200.0
+>15200.0
+>64600.0
+>315400.0
+>31654.0
+>31654.0
+>3800.0
+>15846.0
+
+-Test 4: Prueba4 (-20.000)
+Incorrect program output
+ --- Input ---
+>20
+>10000
+>
+
+ --- Program output ---
+>introduzca numero de horas trabajadas: Introduzca valor de la hora: 200000
+>-300000.0
+>-100000.0
+>-9000.0
+>-4000.0
+>-4000.0
+>-17000.0
+>-83000.0
+>-8330.0
+>-8330.0
+>-1000.0
+>-4170.0
+
+ --- Expected output (numbers)---
+>200000
+>0
+>200000
+>18000.0
+>8000.0
+>8000.0
+>34000.0
+>166000.0
+>16660.0
+>16660.0
+>2000.0
+>8340.0
+
+--|>
+
+<|--
+-Summary of tests
+>+------------------------------+
+>|  5 tests run/ 2 tests passed |
+>+------------------------------+
+
+--|>
+
+Grade :=>>40

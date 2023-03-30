@@ -1,0 +1,8 @@
+Para compilar:
+   javac FirstExample.java
+
+Para ejecutar en windows:
+   java -classpath .;mysql-connector-java-8.0.26.jar FirstExample
+
+
+

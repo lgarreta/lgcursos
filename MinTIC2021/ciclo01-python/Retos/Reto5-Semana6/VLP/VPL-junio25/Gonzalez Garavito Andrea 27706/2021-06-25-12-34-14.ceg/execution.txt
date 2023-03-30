@@ -1,0 +1,135 @@
+Testing 1/1 : Prueba1
+
+<|--
+-Test 1: Prueba1 (-100.000)
+Incorrect program output
+ --- Input ---
+>3
+>Marina Torres
+>1088345678
+>3101234567
+>3
+>Antonio Cortes
+>1044678123
+>3150987654
+>1
+>2
+>M
+>4
+>Antonio Cortes
+>5
+>1044678123
+>1
+>6
+>
+
+ --- Program output ---
+>1. ver listado
+>2. ver listado filtrado
+>3. agregar beneficiario
+>4. buscar beneficiario
+>5. borrar beneficiario
+>6. salir
+>que opcion desea id,cel: Traceback (most recent call last):
+>  File "retofinal.py", line 78, in <module>
+>    if busquedacc(id)==1:
+>  File "retofinal.py", line 27, in busquedacc
+>    datos=readli1nes()
+>NameError: name 'readli1nes' is not defined
+
+ --- Expected output (text)---
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Digite la información del beneficiario a agregar:
+>El beneficiario ha sido agregado
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Digite la información del beneficiario a agregar:
+>El beneficiario ha sido agregado
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Listado de beneficiarios
+>Marina Torres
+>1088345678
+>3101234567
+>Antonio Cortes
+>1044678123
+>3150987654
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Digite la letra por la que empiezan los beneficiarios:
+>Listado filtrado de beneficiarios:
+>Marina Torres
+>1088345678
+>3101234567
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Digite el nombre y apellido del beneficiario a buscar:
+>Antonio Cortes
+>1044678123
+>3150987654
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Digite la cedula del beneficiario a borrar:
+>El usuario ha sido eliminado del listado
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Listado de beneficiarios
+>Marina Torres
+>1088345678
+>3101234567
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Hasta pronto
+
+--|>
+
+<|--
+-Summary of tests
+>+------------------------------+
+>|  1  test run/ 0 tests passed |
+>+------------------------------+
+
+--|>
+
+Grade :=>> 0

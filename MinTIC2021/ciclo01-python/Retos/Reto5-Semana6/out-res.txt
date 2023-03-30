@@ -1,0 +1,60 @@
+Menu Pricipal
+1. Ver Listado
+2. Ver Listado Filtrado
+3. Agregar Beneficiario
+4. Buscar Beneficiario
+5. Borrar Beneficiario
+6. Salir
+Digite la información del beneficiario a agregar: 
+El beneficiario ha sido agregado
+Menu Pricipal
+1. Ver Listado
+2. Ver Listado Filtrado
+3. Agregar Beneficiario
+4. Buscar Beneficiario
+5. Borrar Beneficiario
+6. Salir
+Digite la información del beneficiario a agregar: 
+El beneficiario ha sido agregado
+Menu Pricipal
+1. Ver Listado
+2. Ver Listado Filtrado
+3. Agregar Beneficiario
+4. Buscar Beneficiario
+5. Borrar Beneficiario
+6. Salir
+Listado de Beneficiarios
+Marina Torres
+1088345678
+3101234567
+Antonio Cortes
+1044678123
+3150987654
+Menu Pricipal
+1. Ver Listado
+2. Ver Listado Filtrado
+3. Agregar Beneficiario
+4. Buscar Beneficiario
+5. Borrar Beneficiario
+6. Salir
+Digite la letra por la que empiezan los beneficiarios
+Listado filtrado de beneficiarios: 
+Marina Torres
+1088345678
+3101234567
+Menu Pricipal
+1. Ver Listado
+2. Ver Listado Filtrado
+3. Agregar Beneficiario
+4. Buscar Beneficiario
+5. Borrar Beneficiario
+6. Salir
+Digite el nombre y apellido del beneficiario a buscar: 
+Menu Pricipal
+1. Ver Listado
+2. Ver Listado Filtrado
+3. Agregar Beneficiario
+4. Buscar Beneficiario
+5. Borrar Beneficiario
+6. Salir
+Digite la cedula del beneficiario a borrar: 

@@ -1,0 +1,1 @@
+/home/lg/repos/lgcursos/mintic/ciclo02-java/retos/scripts-VPL/calificador/calificaciones-obtener-from-VPL.py

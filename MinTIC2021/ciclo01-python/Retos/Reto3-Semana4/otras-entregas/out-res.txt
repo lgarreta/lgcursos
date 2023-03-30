@@ -1,0 +1,8 @@
+Ingrese temperatura maxima: Ingrese temperatura minima: Ingrese temperatura maxima: Ingrese temperatura minima: Ingrese temperatura maxima: Ingrese temperatura minima: Ingrese temperatura maxima: Ingrese temperatura minima: 3
+1
+0
+1
+0
+23.0
+4.333333333333333
+33.333333333333336

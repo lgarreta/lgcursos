@@ -1,0 +1,7 @@
+- Ingresar por encuentro Webex
+- Past Meetings
+- Sale la lista de asistentes
+- Seleccionar icono Action
+- Seleccionar icono Download
+- Seleccionar All meetings
+

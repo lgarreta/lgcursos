@@ -1,0 +1,2 @@
+Para los projectos en netbeans:
+  - Adicionar en libraries el archivo del jdbc respectio (sqlite o mysql, dependiendo del manejador que instale)

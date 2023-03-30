@@ -1,0 +1,2 @@
+- Programa falló en el evaluador VPL ya que no se adecuó para este:
+- Debería removerse los mensajes, solo presentarse los resultados.

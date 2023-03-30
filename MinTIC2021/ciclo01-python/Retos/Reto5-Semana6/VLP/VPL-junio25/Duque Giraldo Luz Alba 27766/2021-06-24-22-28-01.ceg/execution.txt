@@ -1,0 +1,219 @@
+Testing 1/1 : Prueba1
+
+<|--
+-Test 1: Prueba1 (-100.000)
+Incorrect program output
+ --- Input ---
+>3
+>Marina Torres
+>1088345678
+>3101234567
+>3
+>Antonio Cortes
+>1044678123
+>3150987654
+>1
+>2
+>M
+>4
+>Antonio Cortes
+>5
+>1044678123
+>1
+>6
+>
+
+ --- Program output ---
+>sh: 1: cls: not found
+>sh: 1: cls: not found
+>Se creo el archivo 'agenda' en .
+>
+>
+>---------------------------------------------------------
+>                      Menú Principal 
+>---------------------------------------------------------
+>        
+>        1.  Añadir un beneficiario.
+>        2.  Buscar el Número celular de un beneficiario.
+>        3.  Borrar un beneficiario dado su número de cédula.
+>        4.  Mostrar listado completo de beneficiacios.
+>        5.  Mostrar listado de beneficiarios cuyo nombre empieza por una letra determinada.
+>
+>
+>        0.  Salir del programa.
+>
+>---------------------------------------------------------
+>    Elija una opción: Por favor ingrese el número de cedula del beneficiario que desea borrar: No existen Coincidencias
+>
+>
+>
+>---------------------------------------------------------
+>                      Menú Principal 
+>---------------------------------------------------------
+>        
+>        1.  Añadir un beneficiario.
+>        2.  Buscar el Número celular de un beneficiario.
+>        3.  Borrar un beneficiario dado su número de cédula.
+>        4.  Mostrar listado completo de beneficiacios.
+>        5.  Mostrar listado de beneficiarios cuyo nombre empieza por una letra determinada.
+>
+>
+>        0.  Salir del programa.
+>
+>---------------------------------------------------------
+>    Elija una opción: 
+>1088345678 No es una opción valida, intentelo de nuevo
+>
+>Elija una opción[1-5]: 
+>3101234567 No es una opción valida, intentelo de nuevo
+>
+>Elija una opción[1-5]: Por favor ingrese el número de cedula del beneficiario que desea borrar: No existen Coincidencias
+>
+>
+>
+>---------------------------------------------------------
+>                      Menú Principal 
+>---------------------------------------------------------
+>        
+>        1.  Añadir un beneficiario.
+>        2.  Buscar el Número celular de un beneficiario.
+>        3.  Borrar un beneficiario dado su número de cédula.
+>        4.  Mostrar listado completo de beneficiacios.
+>        5.  Mostrar listado de beneficiarios cuyo nombre empieza por una letra determinada.
+>
+>
+>        0.  Salir del programa.
+>
+>---------------------------------------------------------
+>    Elija una opción: 
+>1044678123 No es una opción valida, intentelo de nuevo
+>
+>Elija una opción[1-5]: 
+>3150987654 No es una opción valida, intentelo de nuevo
+>
+>Elija una opción[1-5]: Por favor ingrese el nombre completo del benecifiario: Por favor ingrese el No. de cedula del benecifiario (sin puntos o comas): El Numero ingresado no es valido.
+>Intentelo denuevo.
+>Por favor ingrese el No. de cedula del benecifiario (sin puntos o comas): Por favor ingrese el No. de celular del benecifiario (sin espacios o -): El Numero ingresado no es valido.
+>Intentelo denuevo.
+>Por favor ingrese el No. de celular del benecifiario (sin espacios o -): Operacion completada con exito
+>Presione enter para continua: 
+>
+>---------------------------------------------------------
+>                      Menú Principal 
+>---------------------------------------------------------
+>        
+>        1.  Añadir un beneficiario.
+>        2.  Buscar el Número celular de un beneficiario.
+>        3.  Borrar un beneficiario dado su número de cédula.
+>        4.  Mostrar listado completo de beneficiacios.
+>        5.  Mostrar listado de beneficiarios cuyo nombre empieza por una letra determinada.
+>
+>
+>        0.  Salir del programa.
+>
+>---------------------------------------------------------
+>    Elija una opción: Por favor ingrese el nombre completo del benecifiario: Por favor ingrese el No. de cedula del benecifiario (sin puntos o comas): El Numero ingresado no es valido.
+>Intentelo denuevo.
+>Por favor ingrese el No. de cedula del benecifiario (sin puntos o comas): Traceback (most recent call last):
+>  File "retofinal.py", line 284, in <module>
+>    if addUser(myFilePath)==0:
+>  File "retofinal.py", line 146, in addUser
+>    userCedula = input('Por favor ingrese el No. de cedula del benecifiario (sin puntos o comas): ')
+>EOFError: EOF when reading a line
+
+ --- Expected output (text)---
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Digite la información del beneficiario a agregar:
+>El beneficiario ha sido agregado
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Digite la información del beneficiario a agregar:
+>El beneficiario ha sido agregado
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Listado de beneficiarios
+>Marina Torres
+>1088345678
+>3101234567
+>Antonio Cortes
+>1044678123
+>3150987654
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Digite la letra por la que empiezan los beneficiarios:
+>Listado filtrado de beneficiarios:
+>Marina Torres
+>1088345678
+>3101234567
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Digite el nombre y apellido del beneficiario a buscar:
+>Antonio Cortes
+>1044678123
+>3150987654
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Digite la cedula del beneficiario a borrar:
+>El usuario ha sido eliminado del listado
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Listado de beneficiarios
+>Marina Torres
+>1088345678
+>3101234567
+>Menu Principal
+>1. Ver listado
+>2. Ver listado filtrado
+>3. Agregar beneficiario
+>4. Buscar beneficiario
+>5. Borrar beneficiario
+>6. Salir
+>Hasta pronto
+
+--|>
+
+<|--
+-Summary of tests
+>+------------------------------+
+>|  1  test run/ 0 tests passed |
+>+------------------------------+
+
+--|>
+
+Grade :=>> 0

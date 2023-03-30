@@ -1,0 +1,2 @@
+- No funciona
+- Errores de sintaxis

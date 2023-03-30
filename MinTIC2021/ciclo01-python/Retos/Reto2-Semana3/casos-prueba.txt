@@ -1,0 +1,53 @@
+Ejemplo de entradas en programa python:
+ENTRADAS:
+---------
+edad     = int (input ("Edad: "))
+puntaje  = int (input ("Puntaje: "))
+ingreso  = int (input ("Ingreso: "))
+
+SALIDAS:
+-------
+print (descEdad)
+print (descPuntaje)
+print (descIngreso)
+print (descTotal)
+
+
+CASOS:
+------
+case = Test 1
+
+Input = 
+23
+100
+12
+
+Output = 
+10
+45
+0
+55
+
+case = Test 2
+
+Input = 
+21
+100
+5
+
+Output = 15
+45
+0
+60
+
+case = Test 3
+Input = 
+25
+80
+1
+
+Output = 
+10
+30
+30
+70

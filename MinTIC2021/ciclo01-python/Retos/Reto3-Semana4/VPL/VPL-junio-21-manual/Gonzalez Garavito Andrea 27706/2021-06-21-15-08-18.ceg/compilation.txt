@@ -1,0 +1,1 @@
+To run this type of program you need some file with extension "py"

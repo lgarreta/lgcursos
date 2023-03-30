@@ -1,0 +1,3 @@
+- Programa muy complejo
+- Fallo en el evaluador VPL, ya que no se aducuó para este evaluador:
+- Para el evaluador, el programa no debe tener mensajes de salida

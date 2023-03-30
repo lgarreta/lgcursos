@@ -1,0 +1,20 @@
+Inicio Algoritmo Calculo Salario
+
+Escribir "Ingrese nombre:"
+
+Leer nombre:
+
+Escribir "Ingrese valor hora:"
+
+Leer valorhora
+
+Escribir "Ingrese numero horas:"
+
+Leer numerohoras
+
+pagototal <- valorhora * numerohoras
+
+Escribir "Usuario: ", nombre, " se gano el total de: ", pagototal
+
+Fin del algoritmo
+

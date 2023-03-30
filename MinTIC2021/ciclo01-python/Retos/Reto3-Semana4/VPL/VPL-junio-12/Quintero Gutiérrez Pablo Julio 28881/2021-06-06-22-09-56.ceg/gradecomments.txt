@@ -1,0 +1,78 @@
+-Failed tests
+Test 1: Prueba1
+Test 5: Prueba5
+-Test 1: Prueba1 (-20.000)
+Incorrect program output
+ --- Input ---
+>45
+>10000
+>
+
+ --- Program output ---
+>Costo horas normales:  475000.0
+>Costo extras:  75000.0
+>Sueldo bruto:  475000.0
+>Parafiscal:  42750.0
+>Salud:  19000.0
+>Pensión:  19000.0
+>Deducciones:  80750.0
+>Sueldo neto:  394250.0
+>Prima:  39567.5
+>Cesantías:  39567.5
+>Intereses cesantías:  4750.0
+>vacaciones:  19807.5
+
+ --- Expected output (numbers)---
+>400000
+>75000.0
+>475000.0
+>42750.0
+>19000.0
+>19000.0
+>80750.0
+>394250.0
+>39567.5
+>39567.5
+>4750.0
+>19807.5
+
+-Test 5: Prueba5 (-20.000)
+Incorrect program output
+ --- Input ---
+>50
+>10000
+>
+
+ --- Program output ---
+>Costo horas normales:  550000.0
+>Costo extras:  150000.0
+>Sueldo bruto:  550000.0
+>Parafiscal:  49500.0
+>Salud:  22000.0
+>Pensión:  22000.0
+>Deducciones:  93500.0
+>Sueldo neto:  456500.0
+>Prima:  45815.0
+>Cesantías:  45815.0
+>Intereses cesantías:  5500.0
+>vacaciones:  22935.0
+
+ --- Expected output (numbers)---
+>400000
+>150000.0
+>550000.0
+>49500.0
+>22000.0
+>22000.0
+>93500.0
+>456500.0
+>45815.0
+>45815.0
+>5500.0
+>22935.0
+
+-Summary of tests
+>+------------------------------+
+>|  5 tests run/ 3 tests passed |
+>+------------------------------+
+

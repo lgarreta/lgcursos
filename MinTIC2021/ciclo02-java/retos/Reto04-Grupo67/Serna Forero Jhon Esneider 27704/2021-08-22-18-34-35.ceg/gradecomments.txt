@@ -1,0 +1,5 @@
+Exception in thread "main" java.lang.UnsupportedOperationException: Not supported yet.
+        at DirectorioDAO.eliminar(DirectorioDAO.java:156)
+        at Controlador.eliminar(Controlador.java:104)
+        at Controlador.iniciar(Controlador.java:72)
+        at ProgramaDirectorio.main(ProgramaDirectorio.java:9)
